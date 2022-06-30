@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/dna/
+
 def count_nucleotides(seq: str, nmap: str="ACGT"):
     counts = [0 for _ in range(len(nmap))]
     for n in seq:

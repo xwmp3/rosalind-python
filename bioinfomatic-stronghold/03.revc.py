@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/revc/
+
 def other_strand_dna(seq: str):
     reverse_seq = seq[::-1]
     res = []

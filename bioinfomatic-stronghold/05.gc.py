@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/gc/
+
 import numpy as np
 
 def load_fasta(filepath: str):

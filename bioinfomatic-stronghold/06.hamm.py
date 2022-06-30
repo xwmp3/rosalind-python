@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/hamm/
+
 def hamming_distance(s1: str, s2: str):
     if len(s1) != len(s2):
         raise ValueError("Not the same length!")

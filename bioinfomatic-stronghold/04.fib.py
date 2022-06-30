@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/fib/
+
 def rabbit_fib(n: int, k: int):
     if n == 1 or n == 2:
         return 1
