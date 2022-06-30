@@ -5,7 +5,7 @@ def count_nucleotides(seq: str, nmap: str="ACGT"):
     return counts
     
 if __name__ == "__main__":
-    datapath = './datasets/rosalind_dna.txt'
+    datapath = './datasets/01.dna.txt'
     data = ""
     with open(datapath, 'r') as f:
         data = f.readline().replace('\n', '')
