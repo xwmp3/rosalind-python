@@ -26,7 +26,7 @@ def gc_content(seq: str):
     return count / len(seq)
     
 if __name__ == "__main__":
-    path = './datasets/05.gc.txt'
+    path = './datasets/005.gc.txt'
     names, seqs = load_fasta(path)
     print(seqs)
     gc_content_list = [gc_content(seq) * 100 for seq in seqs]

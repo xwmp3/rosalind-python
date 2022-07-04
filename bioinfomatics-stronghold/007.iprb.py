@@ -32,6 +32,6 @@ def iprb(k: int, m: int, n: int):
     
     
 if __name__ == "__main__":
-    path = './datasets/07.iprb.txt'
+    path = './datasets/007.iprb.txt'
     k, m, n = load_kmn(path)
     print(iprb(k, m, n))

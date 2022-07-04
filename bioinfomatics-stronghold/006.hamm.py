@@ -6,7 +6,7 @@ def hamming_distance(s1: str, s2: str):
     return sum(es1 != es2 for es1, es2 in zip(s1, s2))
     
 if __name__ == "__main__":
-    path = './datasets/06.hamm.txt'
+    path = './datasets/006.hamm.txt'
     s1, s2 = "", ""
     with open(path, 'r') as f:
         s1 = f.readline().replace('\n', '').strip()

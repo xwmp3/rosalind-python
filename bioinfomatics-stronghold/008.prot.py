@@ -24,8 +24,8 @@ def rna2prot(rna_prot_map: dict, seq: str):
     return ''.join(prot_list)
     
 if __name__ == "__main__":
-    codon_table_path = "./datasets/08.rna-codon-table.txt"
-    data_path = "./datasets/08.prot.txt"
+    codon_table_path = "./datasets/008.rna-codon-table.txt"
+    data_path = "./datasets/008.prot.txt"
     rna_prot_map = load_rna_codon_table(codon_table_path)
     rna_seq = load_rna_seq(data_path)
     print(rna2prot(rna_prot_map, rna_seq))

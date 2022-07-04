@@ -14,6 +14,6 @@ def rabbit_fib(n: int, k: int):
         return rabbit_fib(n - 1, k) + k * rabbit_fib(n - 2, k)
     
 if __name__ == "__main__":
-    path = "./datasets/04.fib.txt"
+    path = "./datasets/004.fib.txt"
     n, k = load_nk(path)
     print(rabbit_fib(n, k))
