@@ -8,8 +8,7 @@ def timer(func):
         time_start = time()
         result = func(*args,**kwargs)
         time_end = time()
-        time_spend = time_end - time_start
-        print('{0} cost time {1} s'.format(func.__name__, time_spend))
+        print('{0} cost time {1} s'.format(func.__name__, time_end - time_start))
         return result
     return func_wrapper
 
@@ -37,7 +36,6 @@ def get_subs(s: str, sort: bool=True):
     if sort:
         subs = sorted(subs, key=lambda i : len(i), reverse=True)
     return subs
-
 
 def is_substr(s: str, t: str):
     for i in range(0, len(s) - len(t)):
