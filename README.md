@@ -5,14 +5,14 @@
 Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 
 
-## algorithmic-heights
+## Algorithmic Heights
 
 
 | Title | URL | Script |
 | :----- | :---- | :---- |
 | Fibonacci Numbers | https://rosalind.info/problems/fibo/ | [01.fibo.py](./algorithmic-heights/01.fibo.py) |
 
-## bioinfomatics-stronghold
+## Bioinfomatics Stronghold
 
 
 | Title | URL | Script |
@@ -35,15 +35,16 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Finding a Protein Motif | https://rosalind.info/problems/mprt/ | [016.mprt.py](./bioinfomatics-stronghold/016.mprt.py) |
 | Inferring mRNA from Protein | https://rosalind.info/problems/mrna/ | [017.mrna.py](./bioinfomatics-stronghold/017.mrna.py) |
 | Open Reading Frames | https://rosalind.info/problems/orf/ | [018.orf.py](./bioinfomatics-stronghold/018.orf.py) |
+| Enumerating Gene Orders | https://rosalind.info/problems/perm/ | [019.perm.py](./bioinfomatics-stronghold/019.perm.py) |
 
-## bioinfomatics-textbook-track
+## Bioinfomatics Textbook Track
 
 
 | Title | URL | Script |
 | :----- | :---- | :---- |
 | Compute the Probability of a Hidden Path | https://rosalind.info/problems/ba10a/ | [001.ba10a.py](./bioinfomatics-textbook-track/001.ba10a.py) |
 
-## bioinfomatics-armory
+## Bioinfomatics Armory
 
 
 | Title | URL | Script |

@@ -1,8 +1,9 @@
 # macOS
 .DS_Store
-# jupyter
+
+# jupyter lab
 *.ipynb
 .ipynb_checkpoints
 
-# bioinfo-dataformat
+# bioinfo dataformat
 *.fasta
