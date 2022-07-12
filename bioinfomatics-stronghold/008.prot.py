@@ -1,3 +1,5 @@
+# https://rosalind.info/problems/prot/
+
 def load_rna_codon_table(filepath: str):
     rna_prot_map = {}
     with open(filepath, 'r') as f:
