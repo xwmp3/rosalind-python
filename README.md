@@ -36,6 +36,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Inferring mRNA from Protein | https://rosalind.info/problems/mrna/ | [017.mrna.py](./bioinfomatics-stronghold/017.mrna.py) |
 | Open Reading Frames | https://rosalind.info/problems/orf/ | [018.orf.py](./bioinfomatics-stronghold/018.orf.py) |
 | Enumerating Gene Orders | https://rosalind.info/problems/perm/ | [019.perm.py](./bioinfomatics-stronghold/019.perm.py) |
+| Calculating Protein Mass | https://rosalind.info/problems/prtm/ | [020.prtm.py](./bioinfomatics-stronghold/020.prtm.py) |
 
 ## Bioinfomatics Textbook Track
 
