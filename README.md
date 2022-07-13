@@ -37,6 +37,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Open Reading Frames | https://rosalind.info/problems/orf/ | [018.orf.py](./bioinfomatics-stronghold/018.orf.py) |
 | Enumerating Gene Orders | https://rosalind.info/problems/perm/ | [019.perm.py](./bioinfomatics-stronghold/019.perm.py) |
 | Calculating Protein Mass | https://rosalind.info/problems/prtm/ | [020.prtm.py](./bioinfomatics-stronghold/020.prtm.py) |
+| Locating Restriction Sites | https://rosalind.info/problems/revp/ | [021.revp.py](./bioinfomatics-stronghold/021.revp.py) |
 
 ## Bioinfomatics Textbook Track
 
