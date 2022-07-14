@@ -40,6 +40,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Locating Restriction Sites | https://rosalind.info/problems/revp/ | [021.revp.py](./bioinfomatics-stronghold/021.revp.py) |
 | RNA Splicing | https://rosalind.info/problems/splc/ | [022.splc.py](./bioinfomatics-stronghold/022.splc.py) |
 | Enumerating k-mers Lexicographically | https://rosalind.info/problems/lexf/ | [023.lexf.py](./bioinfomatics-stronghold/023.lexf.py) |
+| Longest Increasing Subsequence | https://rosalind.info/problems/lgis/ | [024.lgis.py](./bioinfomatics-stronghold/024.lgis.py) |
 
 ## Bioinfomatics Textbook Track
 
