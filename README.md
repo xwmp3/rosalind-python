@@ -38,6 +38,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Enumerating Gene Orders | https://rosalind.info/problems/perm/ | [019.perm.py](./bioinfomatics-stronghold/019.perm.py) |
 | Calculating Protein Mass | https://rosalind.info/problems/prtm/ | [020.prtm.py](./bioinfomatics-stronghold/020.prtm.py) |
 | Locating Restriction Sites | https://rosalind.info/problems/revp/ | [021.revp.py](./bioinfomatics-stronghold/021.revp.py) |
+| RNA Splicing | https://rosalind.info/problems/splc/ | [022.splc.py](./bioinfomatics-stronghold/022.splc.py) |
 
 ## Bioinfomatics Textbook Track
 
