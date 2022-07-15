@@ -41,6 +41,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | RNA Splicing | https://rosalind.info/problems/splc/ | [022.splc.py](./bioinfomatics-stronghold/022.splc.py) |
 | Enumerating k-mers Lexicographically | https://rosalind.info/problems/lexf/ | [023.lexf.py](./bioinfomatics-stronghold/023.lexf.py) |
 | Longest Increasing Subsequence | https://rosalind.info/problems/lgis/ | [024.lgis.py](./bioinfomatics-stronghold/024.lgis.py) |
+| Genome Assembly as Shortest Superstring | https://rosalind.info/problems/long/ | [025.long.py](./bioinfomatics-stronghold/025.long.py) |
 
 ## Bioinfomatics Textbook Track
 
