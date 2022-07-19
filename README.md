@@ -44,6 +44,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Genome Assembly as Shortest Superstring | https://rosalind.info/problems/long/ | [025.long.py](./bioinfomatics-stronghold/025.long.py) |
 | Perfect Matchings and RNA Secondary Structures | https://rosalind.info/problems/pmch/ | [026.pmch.py](./bioinfomatics-stronghold/026.pmch.py) |
 | Partial Permutations | https://rosalind.info/problems/pper/ | [027.pper.py](./bioinfomatics-stronghold/027.pper.py) |
+| Introduction to Random Strings | https://rosalind.info/problems/prob/ | [028.prob.py](./bioinfomatics-stronghold/028.prob.py) |
 
 ## Bioinfomatics Textbook Track
 
