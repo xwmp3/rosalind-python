@@ -45,6 +45,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Perfect Matchings and RNA Secondary Structures | https://rosalind.info/problems/pmch/ | [026.pmch.py](./bioinfomatics-stronghold/026.pmch.py) |
 | Partial Permutations | https://rosalind.info/problems/pper/ | [027.pper.py](./bioinfomatics-stronghold/027.pper.py) |
 | Introduction to Random Strings | https://rosalind.info/problems/prob/ | [028.prob.py](./bioinfomatics-stronghold/028.prob.py) |
+| Enumerating Oriented Gene Orderings | https://rosalind.info/problems/sign/ | [029.sign.py](./bioinfomatics-stronghold/029.sign.py) |
 
 ## Bioinfomatics Textbook Track
 
