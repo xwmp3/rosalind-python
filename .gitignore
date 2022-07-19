@@ -7,3 +7,6 @@
 
 # bioinfo dataformat
 *.fasta
+
+# others
+gen-readme.py
