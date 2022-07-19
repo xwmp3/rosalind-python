@@ -42,6 +42,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Enumerating k-mers Lexicographically | https://rosalind.info/problems/lexf/ | [023.lexf.py](./bioinfomatics-stronghold/023.lexf.py) |
 | Longest Increasing Subsequence | https://rosalind.info/problems/lgis/ | [024.lgis.py](./bioinfomatics-stronghold/024.lgis.py) |
 | Genome Assembly as Shortest Superstring | https://rosalind.info/problems/long/ | [025.long.py](./bioinfomatics-stronghold/025.long.py) |
+| Perfect Matchings and RNA Secondary Structures | https://rosalind.info/problems/pmch/ | [026.pmch.py](./bioinfomatics-stronghold/026.pmch.py) |
 
 ## Bioinfomatics Textbook Track
 
