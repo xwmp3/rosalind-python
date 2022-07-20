@@ -48,6 +48,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Enumerating Oriented Gene Orderings | https://rosalind.info/problems/sign/ | [029.sign.py](./bioinfomatics-stronghold/029.sign.py) |
 | Finding a Spliced Motif | https://rosalind.info/problems/sseq/ | [030.sseq.py](./bioinfomatics-stronghold/030.sseq.py) |
 | Transitions and Transversions | https://rosalind.info/problems/tran/ | [031.tran.py](./bioinfomatics-stronghold/031.tran.py) |
+| Completing a Tree | https://rosalind.info/problems/tree/ | [032.tree.py](./bioinfomatics-stronghold/032.tree.py) |
 
 ## Bioinfomatics Textbook Track
 
