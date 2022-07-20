@@ -1,4 +1,4 @@
-# https://rosalind.info/problems/sseq/
+# https://rosalind.info/problems/tran/
 
 def load_fasta(filepath: str):
     name_list, seq_list = [], []

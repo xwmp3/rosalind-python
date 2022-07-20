@@ -47,7 +47,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Introduction to Random Strings | https://rosalind.info/problems/prob/ | [028.prob.py](./bioinfomatics-stronghold/028.prob.py) |
 | Enumerating Oriented Gene Orderings | https://rosalind.info/problems/sign/ | [029.sign.py](./bioinfomatics-stronghold/029.sign.py) |
 | Finding a Spliced Motif | https://rosalind.info/problems/sseq/ | [030.sseq.py](./bioinfomatics-stronghold/030.sseq.py) |
-| Finding a Spliced Motif | https://rosalind.info/problems/sseq/ | [031.tran.py](./bioinfomatics-stronghold/031.tran.py) |
+| Transitions and Transversions | https://rosalind.info/problems/tran/ | [031.tran.py](./bioinfomatics-stronghold/031.tran.py) |
 
 ## Bioinfomatics Textbook Track
 
