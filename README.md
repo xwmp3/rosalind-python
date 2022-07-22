@@ -50,6 +50,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | Transitions and Transversions | https://rosalind.info/problems/tran/ | [031.tran.py](./bioinfomatics-stronghold/031.tran.py) |
 | Completing a Tree | https://rosalind.info/problems/tree/ | [032.tree.py](./bioinfomatics-stronghold/032.tree.py) |
 | Catalan Numbers and RNA Secondary Structures | https://rosalind.info/problems/cat/ | [033.cat.py](./bioinfomatics-stronghold/033.cat.py) |
+| Error Correction in Reads | https://rosalind.info/problems/corr/ | [034.corr.py](./bioinfomatics-stronghold/034.corr.py) |
 
 ## Bioinfomatics Textbook Track
 
