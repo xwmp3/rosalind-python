@@ -38,9 +38,9 @@ def noncrossing_perfect_matches_recursive(seq: str, cache: dict):
     
 if __name__ == '__main__':
     path = "./datasets/033.cat.txt"
-    seq = load_data(path)
     modulo = 10 ** 6
-    # print(seq)
+    
+    seq = load_data(path)
     init_cache = {
         '': 1, 
         'A': 0, 'C': 0, 'G': 0, 'U': 0, 
