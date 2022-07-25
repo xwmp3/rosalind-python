@@ -1,9 +1,6 @@
 # https://rosalind.info/problems/hamm/
 
-def hamming_distance(s1: str, s2: str):
-    if len(s1) != len(s2):
-        raise ValueError("Not the same length!")
-    return sum(es1 != es2 for es1, es2 in zip(s1, s2))
+from utils import hamming_distance
     
 if __name__ == "__main__":
     path = './datasets/006.hamm.txt'

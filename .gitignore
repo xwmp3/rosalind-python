@@ -8,6 +8,9 @@
 # bioinfo dataformat
 *.fasta
 
+# python cache
+__pycache__
+
 # others
 gen-readme.py
 test.txt

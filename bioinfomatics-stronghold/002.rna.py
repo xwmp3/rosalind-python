@@ -1,7 +1,6 @@
 # https://rosalind.info/problems/rna/
 
-def dna_2_rna(seq: str):
-    return ''.join([n if n != 'T' else 'U' for n in seq])    
+from utils import dna_2_rna    
 
 if __name__ == "__main__":
     path = "./datasets/002.rna.txt"

@@ -2,21 +2,7 @@
 
 import itertools
 
-def load_fasta(filepath: str):
-    name_list, seq_list = [], []
-    with open(filepath, 'r') as fasta:
-        while True:
-            line = fasta.readline()
-            if not line:
-                break
-            data = line.replace('\n', '').strip()
-            if data.startswith('>'):
-                name_list.append(data[1:])
-                line = fasta.readline().replace('\n', '').strip()
-                seq_list.append(line)
-            else:
-                seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
-    return name_list, seq_list
+from utils import load_fasta
 
 def load_fasta_dict(filepath: str):
     fasta_dict = {}
@@ -39,9 +25,11 @@ def overlap_graph_edges(data: dict, overlap_k: int):
     return edges
     
 if __name__ == '__main__':
-    path = './datasets/012.grph.txt'
-    fasta_dict = load_fasta_dict(path)
-    print(fasta_dict)
+    inpath = './datasets/012.grph.txt'
+    outpath = './datasets/012.grph.out'
+    fasta_dict = load_fasta_dict(inpath)
     edges = overlap_graph_edges(fasta_dict, 3)
-    for u, v in edges:
-        print(u, v)
+    with open(outpath, 'w') as f:
+        for u, v in edges:
+            f.write(f"{u} {v}\n")
+    print(f"Save Results to {outpath}")
