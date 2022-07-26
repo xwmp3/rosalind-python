@@ -1,3 +1,13 @@
+def timer(func):
+    def func_wrapper(*args,**kwargs):
+        from time import time
+        time_start = time()
+        result = func(*args,**kwargs)
+        time_end = time()
+        print('{0} cost time {1} s'.format(func.__name__, time_end - time_start))
+        return result
+    return func_wrapper
+
 def hamming_distance(s1: str, s2: str):
     if len(s1) != len(s2):
         raise ValueError("Not the same length!")
@@ -45,3 +55,12 @@ def load_rna_codon_table(filepath: str="./datasets/008.rna-codon-table.txt"):
                 rna_seq, prot = datas[2 * i], datas[2 * i + 1]
                 rna_prot_map[rna_seq] = prot
     return rna_prot_map
+
+def load_prot_mass_table(
+    filepath: str="./datasets/020.monoisotopic-mass-table.txt") -> dict:
+    mass_dict = {}
+    with open(filepath, 'r') as f:
+        for line in f.readlines():
+            data = line.replace('\n', '').strip().split()
+            mass_dict[data[0]] = float(data[1])
+    return mass_dict

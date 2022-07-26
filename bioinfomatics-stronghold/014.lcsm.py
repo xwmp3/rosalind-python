@@ -2,31 +2,7 @@
 
 import numpy as np
 
-def timer(func):
-    def func_wrapper(*args,**kwargs):
-        from time import time
-        time_start = time()
-        result = func(*args,**kwargs)
-        time_end = time()
-        print('{0} cost time {1} s'.format(func.__name__, time_end - time_start))
-        return result
-    return func_wrapper
-
-def load_fasta(filepath: str):
-    name_list, seq_list = [], []
-    with open(filepath, 'r') as fasta:
-        while True:
-            line = fasta.readline()
-            if not line:
-                break
-            data = line.replace('\n', '').strip()
-            if data.startswith('>'):
-                name_list.append(data[1:])
-                line = fasta.readline().replace('\n', '').strip()
-                seq_list.append(line)
-            else:
-                seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
-    return name_list, seq_list
+from utils import timer, load_fasta
 
 def get_subs(s: str, sort: bool=True):
     subs = []

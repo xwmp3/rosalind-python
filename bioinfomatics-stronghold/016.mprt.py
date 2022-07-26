@@ -3,6 +3,8 @@
 import requests
 import os
 
+from utils import load_fasta
+
 def load_uniprot_ids(filepath: str):
     ids = []
     with open(filepath, 'r') as f:
@@ -24,22 +26,6 @@ def save_prot_seq_from_uniprot(uniprot_id: str, basedir: str):
     with open(filepath, 'w') as f:
         f.write(fasta)
     return filepath
-
-def load_fasta(filepath: str):
-    name_list, seq_list = [], []
-    with open(filepath, 'r') as fasta:
-        while True:
-            line = fasta.readline()
-            if not line:
-                break
-            data = line.replace('\n', '').strip()
-            if data.startswith('>'):
-                name_list.append(data[1:])
-                line = fasta.readline().replace('\n', '').strip()
-                seq_list.append(line)
-            else:
-                seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
-    return name_list, seq_list
 
 def check_motif(t: str):
     return t[0] == 'N' and t[1] != 'P' and (t[2] == 'S' or t[2] == 'T') and t[3] != 'P'

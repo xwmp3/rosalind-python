@@ -1,20 +1,6 @@
 # https://rosalind.info/problems/sseq/
 
-def load_fasta(filepath: str):
-    name_list, seq_list = [], []
-    with open(filepath, 'r') as fasta:
-        while True:
-            line = fasta.readline()
-            if not line:
-                break
-            data = line.replace('\n', '').strip()
-            if data.startswith('>'):
-                name_list.append(data[1:])
-                line = fasta.readline().replace('\n', '').strip()
-                seq_list.append(line)
-            else:
-                seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
-    return name_list, seq_list
+from utils import load_fasta
 
 def load_data(filepath: str) -> tuple:
     s, t = load_fasta(filepath)[1]

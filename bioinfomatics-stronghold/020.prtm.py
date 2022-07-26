@@ -1,12 +1,5 @@
 # https://rosalind.info/problems/prtm/
-
-def load_prot_mass_table(filepath: str) -> dict:
-    mass_dict = {}
-    with open(filepath, 'r') as f:
-        for line in f.readlines():
-            data = line.replace('\n', '').strip().split()
-            mass_dict[data[0]] = float(data[1])
-    return mass_dict
+from utils import load_prot_mass_table
 
 def load_data(filepath: str) -> str:
     seq: str = ""
@@ -19,9 +12,6 @@ def calc_prot_mass(seq: str, mass_dict: dict) -> float:
 
 if __name__ == '__main__':
     path = "./datasets/020.prtm.txt"
-    mass_table_path = "./datasets/020.monoisotopic-mass-table.txt"
-    mass_dict = load_prot_mass_table(mass_table_path)
-    print(mass_dict)
+    mass_dict = load_prot_mass_table()
     prot_seq = load_data(path)
-    print(prot_seq)
     print(calc_prot_mass(prot_seq, mass_dict))

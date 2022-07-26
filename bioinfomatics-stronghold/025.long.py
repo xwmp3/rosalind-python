@@ -1,20 +1,6 @@
 # https://rosalind.info/problems/long/
 
-def load_fasta(filepath: str):
-    name_list, seq_list = [], []
-    with open(filepath, 'r') as fasta:
-        while True:
-            line = fasta.readline()
-            if not line:
-                break
-            data = line.replace('\n', '').strip()
-            if data.startswith('>'):
-                name_list.append(data[1:])
-                line = fasta.readline().replace('\n', '').strip()
-                seq_list.append(line)
-            else:
-                seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
-    return name_list, seq_list
+from utils import load_fasta
 
 # https://noobest.medium.com/rosalind-genome-assembly-as-shortest-superstring-1db2c7408a64
 def get_superstring(reads_list, superstring=''):
@@ -42,7 +28,10 @@ def get_superstring(reads_list, superstring=''):
                     return get_superstring(reads_list, superstring + current_read[overlap_length:])
     
 if __name__ == '__main__':
-    path = "./datasets/025.long.txt"
-    seqs = load_fasta(path)[1]
-    # print(seqs)
-    print(get_superstring(seqs))
+    inpath = "./datasets/025.long.txt"
+    outpath = "./datasets/025.long.out"
+    seqs = load_fasta(inpath)[1]
+    super_string = get_superstring(seqs)
+    with open(outpath, 'w') as f:
+        f.write(f"{super_string}\n")
+    print(f"Save Results to {outpath}")
