@@ -54,6 +54,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 035 | Counting Phylogenetic Ancestors | https://rosalind.info/problems/inod/ | [035.inod.py](./bioinfomatics-stronghold/035.inod.py) |
 | 036 | k-Mer Composition | https://rosalind.info/problems/kmer/ | [036.kmer.py](./bioinfomatics-stronghold/036.kmer.py) |
 | 037 | Speeding Up Motif Finding | https://rosalind.info/problems/kmp/ | [037.kmp.py](./bioinfomatics-stronghold/037.kmp.py) |
+| 038 | Finding a Shared Spliced Motif | https://rosalind.info/problems/lcsq/ | [038.lcsq.py](./bioinfomatics-stronghold/038.lcsq.py) |
 
 ## Bioinfomatics Textbook Track
 
