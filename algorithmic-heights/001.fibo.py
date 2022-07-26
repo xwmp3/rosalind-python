@@ -15,6 +15,6 @@ def load_n(filepath: str):
     return n
     
 if __name__ == "__main__":
-    path = "./datasets/01.fibo.txt"
+    path = "./datasets/001.fibo.txt"
     n = load_n(path)
     print(fib(n))
