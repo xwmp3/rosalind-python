@@ -5,14 +5,6 @@
 Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 
 
-## Algorithmic Heights
-
-
-| No. | Title | URL | Script |
-| :----- | :----- | :---- | :---- |
-| 001 | Fibonacci Numbers | https://rosalind.info/problems/fibo/ | [001.fibo.py](./algorithmic-heights/001.fibo.py) |
-| 002 | Binary Search | https://rosalind.info/problems/bins/ | [002.bins.py](./algorithmic-heights/002.bins.py) |
-
 ## Bioinfomatics Stronghold
 
 
@@ -58,6 +50,13 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 038 | Finding a Shared Spliced Motif | https://rosalind.info/problems/lcsq/ | [038.lcsq.py](./bioinfomatics-stronghold/038.lcsq.py) |
 | 039 | Ordering Strings of Varying Length Lexicographically | https://rosalind.info/problems/lexv/ | [039.lexv.py](./bioinfomatics-stronghold/039.lexv.py) |
 
+## Bioinfomatics Armory
+
+
+| No. | Title | URL | Script |
+| :----- | :----- | :---- | :---- |
+| 001 | Introduction to the Bioinformatics Armory | https://rosalind.info/problems/ini/ | [001.ini.py](./bioinfomatics-armory/001.ini.py) |
+
 ## Bioinfomatics Textbook Track
 
 
@@ -65,9 +64,10 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | :----- | :----- | :---- | :---- |
 | 001 | Compute the Probability of a Hidden Path | https://rosalind.info/problems/ba10a/ | [001.ba10a.py](./bioinfomatics-textbook-track/001.ba10a.py) |
 
-## Bioinfomatics Armory
+## Algorithmic Heights
 
 
 | No. | Title | URL | Script |
 | :----- | :----- | :---- | :---- |
-| 001 | Introduction to the Bioinformatics Armory | https://rosalind.info/problems/ini/ | [001.ini.py](./bioinfomatics-armory/001.ini.py) |
+| 001 | Fibonacci Numbers | https://rosalind.info/problems/fibo/ | [001.fibo.py](./algorithmic-heights/001.fibo.py) |
+| 002 | Binary Search | https://rosalind.info/problems/bins/ | [002.bins.py](./algorithmic-heights/002.bins.py) |
