@@ -71,3 +71,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | :----- | :----- | :---- | :---- |
 | 001 | Fibonacci Numbers | https://rosalind.info/problems/fibo/ | [001.fibo.py](./algorithmic-heights/001.fibo.py) |
 | 002 | Binary Search | https://rosalind.info/problems/bins/ | [002.bins.py](./algorithmic-heights/002.bins.py) |
+| 003 | Degree Array | https://rosalind.info/problems/deg/ | [003.deg.py](./algorithmic-heights/003.deg.py) |
