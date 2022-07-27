@@ -11,6 +11,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | No. | Title | URL | Script |
 | :----- | :----- | :---- | :---- |
 | 001 | Fibonacci Numbers | https://rosalind.info/problems/fibo/ | [001.fibo.py](./algorithmic-heights/001.fibo.py) |
+| 002 | Binary Search | https://rosalind.info/problems/bins/ | [002.bins.py](./algorithmic-heights/002.bins.py) |
 
 ## Bioinfomatics Stronghold
 
