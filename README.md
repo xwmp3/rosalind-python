@@ -56,6 +56,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 036 | k-Mer Composition | https://rosalind.info/problems/kmer/ | [036.kmer.py](./bioinfomatics-stronghold/036.kmer.py) |
 | 037 | Speeding Up Motif Finding | https://rosalind.info/problems/kmp/ | [037.kmp.py](./bioinfomatics-stronghold/037.kmp.py) |
 | 038 | Finding a Shared Spliced Motif | https://rosalind.info/problems/lcsq/ | [038.lcsq.py](./bioinfomatics-stronghold/038.lcsq.py) |
+| 039 | Ordering Strings of Varying Length Lexicographically | https://rosalind.info/problems/lexv/ | [039.lexv.py](./bioinfomatics-stronghold/039.lexv.py) |
 
 ## Bioinfomatics Textbook Track
 
