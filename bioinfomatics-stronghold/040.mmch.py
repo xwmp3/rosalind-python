@@ -23,6 +23,5 @@ if __name__ == '__main__':
     seq = load_data(inpath)
     print(f"fasta seq: {seq}")
     with open(outpath, 'w') as f:
-        f.write(f"{mmch(seq)}\n")
+        f.write(f"{maximum_matching_num(seq)}\n")
     print(f"Save Results to {outpath}")
-
