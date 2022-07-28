@@ -13,7 +13,7 @@ def hamming_distance(s1: str, s2: str):
         raise ValueError("Not the same length!")
     return sum(es1 != es2 for es1, es2 in zip(s1, s2))
 
-def load_fasta(filepath: str):
+def load_fasta(filepath: str) -> (list, list):
     name_list, seq_list = [], []
     with open(filepath, 'r') as fasta:
         while True:
@@ -29,10 +29,16 @@ def load_fasta(filepath: str):
                 seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
     return name_list, seq_list
 
-def dna_2_rna(seq: str):
+def count_nucleotides(seq: str, nmap: str="ACGT") -> list:
+    counts = [0 for _ in range(len(nmap))]
+    for n in seq:
+        counts[nmap.index(n)] += 1
+    return counts
+
+def dna_2_rna(seq: str) -> str:
     return ''.join([n if n != 'T' else 'U' for n in seq])
 
-def dna_reverse_implement(seq: str):
+def dna_reverse_implement(seq: str) -> str:
     reverse_seq = seq[::-1]
     res = []
     for n in reverse_seq:
@@ -46,7 +52,8 @@ def dna_reverse_implement(seq: str):
             res.append('C')
     return ''.join(res)
 
-def load_rna_codon_table(filepath: str="./datasets/008.rna-codon-table.txt"):
+def load_rna_codon_table(
+    filepath: str="./datasets/008.rna-codon-table.txt") -> dict:
     rna_prot_map = {}
     with open(filepath, 'r') as f:
         for line in f.readlines():
