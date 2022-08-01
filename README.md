@@ -54,6 +54,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 043 | Matching Random Motifs | https://rosalind.info/problems/rstr/ | [043.rstr.py](./bioinfomatics-stronghold/043.rstr.py) |
 | 044 | Counting Subsets | https://rosalind.info/problems/sset/ | [044.sset.py](./bioinfomatics-stronghold/044.sset.py) |
 | 045 | Introduction to Alternative Splicing | https://rosalind.info/problems/aspc/ | [045.aspc.py](./bioinfomatics-stronghold/045.aspc.py) |
+| 046 | Edit Distance | https://rosalind.info/problems/edit/ | [046.edit.py](./bioinfomatics-stronghold/046.edit.py) |
 
 ## Bioinfomatics Armory
 
