@@ -2,7 +2,8 @@
 
 # Creating a Distance Matrix
 
-from utils import load_fasta, hamming_distance
+from data import load_fasta
+from utils import hamming_distance
 
 def load_data(filepath: str) -> (int, list):
     seqs = load_fasta(filepath)[1]

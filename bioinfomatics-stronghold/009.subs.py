@@ -16,7 +16,6 @@ def find_motif(s: str, t: str):
             pos_list.append(i + 1)
     return pos_list
 
-
 if __name__ == '__main__':
     path = './datasets/009.subs.txt'
     s, t = load_st(path)

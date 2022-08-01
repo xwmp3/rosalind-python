@@ -1,6 +1,7 @@
 # https://rosalind.info/problems/orf/
 
-from utils import load_fasta, dna_reverse_implement, load_rna_codon_table, dna_2_rna 
+from data import load_fasta, load_rna_codon_table
+from utils import dna_reverse_implement, dna_2_rna 
 
 def rna_2_prot(seq: str, codon_map: dict, start_codon: str='AUG') -> list:
     prot_set = set()

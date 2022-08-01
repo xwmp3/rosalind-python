@@ -2,13 +2,8 @@
 
 import numpy as np
 
-from utils import load_fasta
-
-def count_nucleotides(seq: str, nmap: str="ACGT"):
-    counts = [0 for _ in range(len(nmap))]
-    for n in seq:
-        counts[nmap.index(n)] += 1
-    return counts
+from data import load_fasta
+from utils import count_nucleotides
 
 def profile_and_consensus(names: list, seqs: list, nmap: str='ACGT'):
     cols = []
@@ -25,12 +20,14 @@ def profile_and_consensus(names: list, seqs: list, nmap: str='ACGT'):
         index_list.append(np.argmax(counts))
     return index_list, count_list
 
-
 if __name__ == '__main__':
-    path = './datasets/010.cons.txt'
+    inpath = './datasets/010.cons.txt'
+    outpath = './datasets/010.cons.out'
     nmap = 'ACGT'
-    names, seqs = load_fasta(path)
+    names, seqs = load_fasta(inpath)
     index_list, count_list = profile_and_consensus(names, seqs, nmap)
-    print(''.join([nmap[i] for i in index_list]))
-    for i, n in enumerate(nmap):
-        print(f"{n}: {' '.join([str(count) for count in count_list[i]])}")
+    # print(''.join([nmap[i] for i in index_list]))
+    with open(outpath, 'w') as f:
+        for i, n in enumerate(nmap):
+            f.write(f"{n}: {' '.join([str(count) for count in count_list[i]])}\n")
+    print(f"Save Results to {outpath}")

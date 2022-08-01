@@ -5,7 +5,8 @@
 from typing import List, Tuple
 from collections import Counter
 
-from utils import hamming_distance, load_fasta, dna_reverse_implement
+from data import load_fasta
+from utils import hamming_distance, dna_reverse_implement
 
 def load_data(filepath: str) -> list:
     return load_fasta(filepath)[1]

@@ -51,6 +51,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 039 | Ordering Strings of Varying Length Lexicographically | https://rosalind.info/problems/lexv/ | [039.lexv.py](./bioinfomatics-stronghold/039.lexv.py) |
 | 040 | Maximum Matchings and RNA Secondary Structures | https://rosalind.info/problems/mmch/ | [040.mmch.py](./bioinfomatics-stronghold/040.mmch.py) |
 | 041 | Creating a Distance Matrix | https://rosalind.info/problems/pdst/ | [041.pdst.py](./bioinfomatics-stronghold/041.pdst.py) |
+| 043 | Matching Random Motifs | https://rosalind.info/problems/rstr/ | [043.rstr.py](./bioinfomatics-stronghold/043.rstr.py) |
 
 ## Bioinfomatics Armory
 

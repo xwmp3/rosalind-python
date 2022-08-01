@@ -1,7 +1,8 @@
 # https://rosalind.info/problems/pmch/
+
 from math import factorial
 
-from utils import load_fasta
+from data import load_fasta
 
 def load_data(filepath: str) -> str:
     return load_fasta(path)[1][0]

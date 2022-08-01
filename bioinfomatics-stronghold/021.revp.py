@@ -1,6 +1,7 @@
 # https://rosalind.info/problems/revp/
 
-from utils import load_fasta, dna_reverse_implement
+from data import load_fasta
+from utils import dna_reverse_implement
 
 def palindromic_recognition_site(seq1: str):
     res: list = []

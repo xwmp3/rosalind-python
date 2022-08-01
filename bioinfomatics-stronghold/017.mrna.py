@@ -1,5 +1,6 @@
 # https://rosalind.info/problems/mrna/
-from utils import load_rna_codon_table
+
+from data import load_rna_codon_table
 
 def load_data(filepath: str):
     data = ""

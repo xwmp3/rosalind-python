@@ -1,5 +1,6 @@
 # https://rosalind.info/problems/prtm/
-from utils import load_prot_mass_table
+
+from data import load_prot_mass_table
 
 def load_data(filepath: str) -> str:
     seq: str = ""

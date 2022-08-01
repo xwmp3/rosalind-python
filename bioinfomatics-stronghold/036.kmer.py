@@ -2,7 +2,7 @@
 
 from itertools import product
 
-from utils import load_fasta
+from data import load_fasta
 
 def load_data(filepath: str):
     return load_fasta(filepath)[1][0]

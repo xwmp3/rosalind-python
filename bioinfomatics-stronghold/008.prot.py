@@ -1,8 +1,8 @@
 # https://rosalind.info/problems/prot/
 
-from utils import load_rna_codon_table
+from data import load_rna_codon_table
 
-def load_rna_seq(filepath: str):
+def load_data(filepath: str):
     seq = ""
     with open(filepath, 'r') as f:
         seq = f.readline().replace('\n', '').strip()
@@ -19,5 +19,5 @@ def rna2prot(rna_prot_map: dict, seq: str):
 if __name__ == "__main__":
     data_path = "./datasets/008.prot.txt"
     rna_prot_map = load_rna_codon_table()
-    rna_seq = load_rna_seq(data_path)
+    rna_seq = load_data(data_path)
     print(rna2prot(rna_prot_map, rna_seq))

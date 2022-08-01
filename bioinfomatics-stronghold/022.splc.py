@@ -1,6 +1,7 @@
 # https://rosalind.info/problems/splc/
 
-from utils import load_fasta, dna_2_rna, load_rna_codon_table
+from data import load_fasta, load_rna_codon_table
+from utils import dna_2_rna
 
 def load_data(filepath: str):
     seqs = load_fasta(filepath)[1]

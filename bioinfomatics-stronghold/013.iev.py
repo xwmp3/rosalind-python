@@ -1,4 +1,5 @@
 # https://rosalind.info/problems/iev/
+
 import numpy as np
 
 def load_data(filepath: str):

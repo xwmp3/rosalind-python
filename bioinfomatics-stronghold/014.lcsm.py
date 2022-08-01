@@ -2,7 +2,8 @@
 
 import numpy as np
 
-from utils import timer, load_fasta
+from data import load_fasta
+from utils import timer
 
 def get_subs(s: str, sort: bool=True):
     subs = []
@@ -42,7 +43,6 @@ def longest_common_substring2(data: list):
     for val in data[1:]:
         s.intersection_update(substrs(val))
     return max(s, key=len)
-    
     
 if __name__ == '__main__':
     path = './datasets/014.lcsm.txt'

@@ -1,6 +1,6 @@
 # https://rosalind.info/problems/sseq/
 
-from utils import load_fasta
+from data import load_fasta
 
 def load_data(filepath: str) -> tuple:
     s, t = load_fasta(filepath)[1]

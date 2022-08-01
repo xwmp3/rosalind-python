@@ -3,7 +3,7 @@
 import requests
 import os
 
-from utils import load_fasta
+from data import load_fasta
 
 def load_uniprot_ids(filepath: str):
     ids = []

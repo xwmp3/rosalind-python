@@ -1,6 +1,6 @@
 # https://rosalind.info/problems/long/
 
-from utils import load_fasta
+from data import load_fasta
 
 # https://noobest.medium.com/rosalind-genome-assembly-as-shortest-superstring-1db2c7408a64
 def get_superstring(reads_list, superstring=''):

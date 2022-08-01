@@ -2,7 +2,8 @@
 
 # Maximum Matchings and RNA Secondary Structures
 
-from utils import count_nucleotides, load_fasta
+from data import load_fasta
+from utils import count_nucleotides
 
 def load_data(filepath: str) -> str:
     return load_fasta(filepath)[1][0]
