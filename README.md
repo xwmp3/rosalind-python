@@ -53,6 +53,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 041 | Creating a Distance Matrix | https://rosalind.info/problems/pdst/ | [041.pdst.py](./bioinfomatics-stronghold/041.pdst.py) |
 | 043 | Matching Random Motifs | https://rosalind.info/problems/rstr/ | [043.rstr.py](./bioinfomatics-stronghold/043.rstr.py) |
 | 044 | Counting Subsets | https://rosalind.info/problems/sset/ | [044.sset.py](./bioinfomatics-stronghold/044.sset.py) |
+| 045 | Introduction to Alternative Splicing | https://rosalind.info/problems/aspc/ | [045.aspc.py](./bioinfomatics-stronghold/045.aspc.py) |
 
 ## Bioinfomatics Armory
 
