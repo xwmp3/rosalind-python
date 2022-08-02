@@ -9,6 +9,9 @@ def load_data(filepath: str) -> (list, list):
         K = [int(item) for item in f.readline().replace('\n', '').strip().split()]
     return A, K
 
+'''
+Binary Search
+'''
 # https://en.wikipedia.org/wiki/Binary_search_algorithm
 def binary_search(arr, start, end, hkey):
 	if start > end:

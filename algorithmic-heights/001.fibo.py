@@ -1,5 +1,9 @@
 # https://rosalind.info/problems/fibo/
 
+'''
+Get Fibonacci Number in Recursive
+'''
+
 def fib(n: int):
     if n == 0:
         return 0

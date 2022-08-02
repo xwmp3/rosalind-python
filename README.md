@@ -80,3 +80,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 003 | Degree Array | [deg](https://rosalind.info/problems/deg/) | [003.deg.py](./algorithmic-heights/003.deg.py) |
 | 004 | Insertion Sort | [ins](https://rosalind.info/problems/ins/) | [004.ins.py](./algorithmic-heights/004.ins.py) |
 | 005 | Double-Degree Array | [ddeg](https://rosalind.info/problems/ddeg/) | [005.ddeg.py](./algorithmic-heights/005.ddeg.py) |
+| 006 | Majority Element | [maj](https://rosalind.info/problems/maj/) | [006.maj.py](./algorithmic-heights/006.maj.py) |
