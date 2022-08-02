@@ -78,4 +78,5 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 001 | Fibonacci Numbers | [fibo](https://rosalind.info/problems/fibo/) | [001.fibo.py](./algorithmic-heights/001.fibo.py) |
 | 002 | Binary Search | [bins](https://rosalind.info/problems/bins/) | [002.bins.py](./algorithmic-heights/002.bins.py) |
 | 003 | Degree Array | [deg](https://rosalind.info/problems/deg/) | [003.deg.py](./algorithmic-heights/003.deg.py) |
+| 004 | Insertion Sort | [ins](https://rosalind.info/problems/ins/) | [004.ins.py](./algorithmic-heights/004.ins.py) |
 | 005 | Double-Degree Array | [ddeg](https://rosalind.info/problems/ddeg/) | [005.ddeg.py](./algorithmic-heights/005.ddeg.py) |

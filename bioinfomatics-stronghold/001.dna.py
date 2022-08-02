@@ -9,3 +9,4 @@ if __name__ == "__main__":
         data = f.readline().replace('\n', '')
     print(len(data))
     print(' '.join([str(count) for count in count_nucleotides(data)]))
+
