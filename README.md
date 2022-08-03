@@ -81,3 +81,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 004 | Insertion Sort | [ins](https://rosalind.info/problems/ins/) | [004.ins.py](./algorithmic-heights/004.ins.py) |
 | 005 | Double-Degree Array | [ddeg](https://rosalind.info/problems/ddeg/) | [005.ddeg.py](./algorithmic-heights/005.ddeg.py) |
 | 006 | Majority Element | [maj](https://rosalind.info/problems/maj/) | [006.maj.py](./algorithmic-heights/006.maj.py) |
+| 007 | Merge Two Sorted Arrays | [mer](https://rosalind.info/problems/mer/) | [007.mer.py](./algorithmic-heights/007.mer.py) |

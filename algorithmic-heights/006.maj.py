@@ -4,7 +4,7 @@
 
 '''
 Count and get the majority element of list
-# majority means the element appears in the list more than half the length of the list
+-> 'majority' means the element appears in the list more than half the length of the list
 '''
 
 from collections import Counter
