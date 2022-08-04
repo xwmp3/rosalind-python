@@ -51,6 +51,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 039 | Ordering Strings of Varying Length Lexicographically | [lexv](https://rosalind.info/problems/lexv/) | [039.lexv.py](./bioinfomatics-stronghold/039.lexv.py) |
 | 040 | Maximum Matchings and RNA Secondary Structures | [mmch](https://rosalind.info/problems/mmch/) | [040.mmch.py](./bioinfomatics-stronghold/040.mmch.py) |
 | 041 | Creating a Distance Matrix | [pdst](https://rosalind.info/problems/pdst/) | [041.pdst.py](./bioinfomatics-stronghold/041.pdst.py) |
+| 042 | Reversal Distance | [rear](https://rosalind.info/problems/rear/) | [042.rear.py](./bioinfomatics-stronghold/042.rear.py) |
 | 043 | Matching Random Motifs | [rstr](https://rosalind.info/problems/rstr/) | [043.rstr.py](./bioinfomatics-stronghold/043.rstr.py) |
 | 044 | Counting Subsets | [sset](https://rosalind.info/problems/sset/) | [044.sset.py](./bioinfomatics-stronghold/044.sset.py) |
 | 045 | Introduction to Alternative Splicing | [aspc](https://rosalind.info/problems/aspc/) | [045.aspc.py](./bioinfomatics-stronghold/045.aspc.py) |
