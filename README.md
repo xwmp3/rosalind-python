@@ -56,6 +56,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 044 | Counting Subsets | [sset](https://rosalind.info/problems/sset/) | [044.sset.py](./bioinfomatics-stronghold/044.sset.py) |
 | 045 | Introduction to Alternative Splicing | [aspc](https://rosalind.info/problems/aspc/) | [045.aspc.py](./bioinfomatics-stronghold/045.aspc.py) |
 | 046 | Edit Distance | [edit](https://rosalind.info/problems/edit/) | [046.edit.py](./bioinfomatics-stronghold/046.edit.py) |
+| 047 | Expected Number of Restriction Sites | [eval](https://rosalind.info/problems/eval/) | [047.eval.py](./bioinfomatics-stronghold/047.eval.py) |
 
 ## Bioinfomatics Armory
 
