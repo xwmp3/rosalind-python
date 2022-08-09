@@ -2,35 +2,30 @@
 
 # Double-Degree Array
 
-from utils import load_edge_list
+from utils import load_edge_list, degree_array
 
-def degree_array(n_nodes: int, edges: list):
-    d_a = [0]*n_nodes
+def neighbor_list(nodes: list, edges: list):
+    nl_dict = {node:set() for node in nodes}
     for start_node, end_node in edges:
-        d_a[start_node - 1] += 1
-        d_a[end_node - 1] += 1
-    return d_a
+        nl_dict[start_node].add(end_node)
+        nl_dict[end_node].add(start_node)
+    return [list(nl_dict[node]) for node in nodes]
 
-def neighbor_list(n_nodes: int, edges: list):
-    res = [set() for _ in range(n_nodes)]
-    for start_node, end_node in edges:
-        res[start_node - 1].add(end_node - 1)
-        res[end_node - 1].add(start_node - 1)
-    return [list(s) for s in res]
-
-def double_degree_array(degree_array: list, neighbor_list: list):
-    res = []
-    for i in range(len(degree_array)):
-        res.append(sum([degree_array[neighbor_index] for neighbor_index in neighbor_list[i]]))
-    return res
+def double_degree_array(nodes: list, degree_array: list, neighbor_list: list):
+    dd_a = []
+    for i in range(len(nodes)):
+        dd_a.append(sum([degree_array[nodes.index(neighbor)] for neighbor in neighbor_list[i]]))
+    return dd_a
 
 if __name__ == "__main__":
     inpath = "./datasets/005.ddeg.txt"
     outpath = "./datasets/005.ddeg.out"
-    n, m, edges = load_edge_list(inpath)
-    d_a = degree_array(n, edges)
-    n_l = neighbor_list(n, edges)
-    results = double_degree_array(d_a, n_l)
+    nodes, edges = load_edge_list(inpath)
+    d_a = degree_array(nodes, edges)
+    n_l = neighbor_list(nodes, edges)
+    dd_a = double_degree_array(nodes, d_a, n_l)
     with open(outpath, 'w') as f:
-        f.write(' '.join([str(i) for i in results]) + '\n')
+        outstr = ' '.join([str(i) for i in dd_a])
+        print(outstr)
+        f.write(outstr + '\n')
     print(f"Save Results to {outpath}")
