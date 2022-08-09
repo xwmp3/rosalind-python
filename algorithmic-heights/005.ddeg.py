@@ -2,7 +2,7 @@
 
 # Double-Degree Array
 
-from utils import load_edge_List
+from utils import load_edge_list
 
 def degree_array(n_nodes: int, edges: list):
     d_a = [0]*n_nodes
@@ -27,7 +27,7 @@ def double_degree_array(degree_array: list, neighbor_list: list):
 if __name__ == "__main__":
     inpath = "./datasets/005.ddeg.txt"
     outpath = "./datasets/005.ddeg.out"
-    n, m, edges = load_edge_List(inpath)
+    n, m, edges = load_edge_list(inpath)
     d_a = degree_array(n, edges)
     n_l = neighbor_list(n, edges)
     results = double_degree_array(d_a, n_l)
