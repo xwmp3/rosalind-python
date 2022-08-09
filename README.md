@@ -85,3 +85,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 006 | Majority Element | [maj](https://rosalind.info/problems/maj/) | [006.maj.py](./algorithmic-heights/006.maj.py) |
 | 007 | Merge Two Sorted Arrays | [mer](https://rosalind.info/problems/mer/) | [007.mer.py](./algorithmic-heights/007.mer.py) |
 | 008 | 2SUM | [2sum](https://rosalind.info/problems/2sum/) | [008.2sum.py](./algorithmic-heights/008.2sum.py) |
+| 009 | Breadth-First Search | [bfs](https://rosalind.info/problems/bfs/) | [009.bfs.py](./algorithmic-heights/009.bfs.py) |
