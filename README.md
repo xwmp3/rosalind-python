@@ -57,6 +57,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 045 | Introduction to Alternative Splicing | [aspc](https://rosalind.info/problems/aspc/) | [045.aspc.py](./bioinfomatics-stronghold/045.aspc.py) |
 | 046 | Edit Distance | [edit](https://rosalind.info/problems/edit/) | [046.edit.py](./bioinfomatics-stronghold/046.edit.py) |
 | 047 | Expected Number of Restriction Sites | [eval](https://rosalind.info/problems/eval/) | [047.eval.py](./bioinfomatics-stronghold/047.eval.py) |
+| 048 | Motzkin Numbers and RNA Secondary Structures | [motz](https://rosalind.info/problems/motz/) | [048.motz.py](./bioinfomatics-stronghold/048.motz.py) |
 
 ## Bioinfomatics Armory
 
@@ -86,3 +87,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 007 | Merge Two Sorted Arrays | [mer](https://rosalind.info/problems/mer/) | [007.mer.py](./algorithmic-heights/007.mer.py) |
 | 008 | 2SUM | [2sum](https://rosalind.info/problems/2sum/) | [008.2sum.py](./algorithmic-heights/008.2sum.py) |
 | 009 | Breadth-First Search | [bfs](https://rosalind.info/problems/bfs/) | [009.bfs.py](./algorithmic-heights/009.bfs.py) |
+| 010 | Connected Components | [cc](https://rosalind.info/problems/cc/) | [010.cc.py](./algorithmic-heights/010.cc.py) |

@@ -19,8 +19,7 @@ def noncrossing_perfect_matches_recursive(seq: str, cache: dict):
             '''
             temp.append(noncrossing_perfect_matches_recursive(seq[1:k], cache) * cache[seq[0] + seq[k]] * noncrossing_perfect_matches_recursive(seq[k+1:], cache))
         cache[seq] = sum(temp)
-    return cache[seq]
-    
+    return cache[seq]   
     
 if __name__ == '__main__':
     path = "./datasets/033.cat.txt"
