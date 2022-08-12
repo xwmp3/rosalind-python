@@ -12,6 +12,7 @@ def load_fasta(filepath: str) -> (list, list):
                 seq_list.append(line)
             else:
                 seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
+    print(f"Load {len(seq_list)} fasta seqs from {filepath}")
     return name_list, seq_list
 
 def load_rna_codon_table(

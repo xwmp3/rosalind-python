@@ -22,7 +22,7 @@ def noncrossing_matches_recursive(seq: str, cache: dict) -> int:
             subintervals = []
             for i in range(1, len(seq)):
                 if seq[0] == matchings[seq[i]]:
-                    subintervals.append([seq[1:i], seq[i + 1:]])
+                    subintervals.append([seq[1:i], seq[i+1:]])
             # Reduce the problem to noncrossing matchings over the matching substrings, and the matchings for the next starting point.
             cache[seq] = sum(
                 [noncrossing_matches_recursive(subint[0], cache) * noncrossing_matches_recursive(subint[1], cache) 
