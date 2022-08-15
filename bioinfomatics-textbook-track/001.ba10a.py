@@ -16,13 +16,15 @@ def load_data(filepath: str):
     f.close()
     return path_string, prs_dict
 
+
 def path_pr(path_str: str, prs_dict: dict):
     pr = 0.5
     for i in range(0, len(path_str) - 1):
-        key = path_str[i:i+2]
+        key = path_str[i:i + 2]
         pr *= pr_dict[key]
     return pr
-    
+
+
 if __name__ == '__main__':
     path = './datasets/001.ba10a.txt'
     path_string, pr_dict = load_data(path)

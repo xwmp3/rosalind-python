@@ -1,11 +1,15 @@
 # https://rosalind.info/problems/rna/
 
-from utils import dna_2_rna    
+from utils import dna_2_rna
+
+
+def load_data(filepath: str) -> str:
+    with open(filepath, 'r') as f:
+        data = f.readline().replace('\n', '')
+    return data
+
 
 if __name__ == "__main__":
-    path = "./datasets/002.rna.txt"
-    data = ""
-    with open(path, 'r') as f:
-        data = f.readline().replace('\n', '')
-    
-    print(dna_2_rna(data))
+    inpath = "./datasets/002.rna.txt"
+    seq = load_data(inpath)
+    print(dna_2_rna(seq))
