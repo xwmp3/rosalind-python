@@ -11,23 +11,26 @@ def load_data(filepath: str) -> list:
     return arrays
 
 
-'''
-iterate over a two-dimensional array
-'''
 def two_sum_indices(x: list):
+    """
+    iterate over a two-dimensional array
+    @param x:
+    @return:
+    """
     for i in range(len(x)):
         for j in range(i + 1, len(x)):
             # print(x[i], x[j], x[i] + x[j] == 0)
             if x[i] + x[j] == 0:
-                return (i + 1, j + 1)
+                return i + 1, j + 1
     return -1
+
 
 if __name__ == '__main__':
     inpath = "./datasets/008.2sum.txt"
     outpath = "./datasets/008.2sum.out"
 
     Xs = load_data(inpath)
-    
+
     res = [two_sum_indices(x) for x in Xs]
 
     outstr = ""
