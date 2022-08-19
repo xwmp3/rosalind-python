@@ -3,16 +3,17 @@
 import numpy as np
 from math import floor
 
+
 def load_data(filepath: str):
-    n, X = 0, []
     with open(filepath, 'r') as f:
         n = int(f.readline().replace('\n', '').strip())
         X = [int(item) for item in f.readline().replace('\n', '').strip().split()]
     return n, X
 
+
 # https://en.wikipedia.org/wiki/Longest_increasing_subsequence
-def longest_increasing_subseq(N: int, X: list) -> list:
-    P, M = np.zeros(n, dtype=int), np.zeros(n+1, dtype=int)
+def longest_increasing_subseq(N: int, X: list) -> np.ndarray:
+    P, M = np.zeros(n, dtype=int), np.zeros(n + 1, dtype=int)
     M[0] = -1
     L = 0
     for i in range(0, N):
@@ -35,6 +36,7 @@ def longest_increasing_subseq(N: int, X: list) -> list:
         S[j] = X[k]
         k = P[k]
     return S
+
 
 if __name__ == '__main__':
     path = "./datasets/024.lgis.txt"

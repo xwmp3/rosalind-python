@@ -1,4 +1,4 @@
-def load_fasta(filepath: str) -> (list, list):
+def load_fasta(filepath: str, is_dict: bool = False):
     name_list, seq_list = [], []
     with open(filepath, 'r') as fasta:
         while True:
@@ -13,10 +13,18 @@ def load_fasta(filepath: str) -> (list, list):
             else:
                 seq_list[len(seq_list) - 1] += line.replace('\n', '').strip()
     print(f"Load {len(seq_list)} fasta seqs from {filepath}")
-    return name_list, seq_list
+    if is_dict:
+        fasta_dict = {}
+        name_list, seq_list = load_fasta(filepath)
+        for i, name in enumerate(name_list):
+            fasta_dict[name] = seq_list[i]
+        return fasta_dict
+    else:
+        return name_list, seq_list
+
 
 def load_rna_codon_table(
-    filepath: str="./datasets/008.rna-codon-table.txt") -> dict:
+        filepath: str = "./datasets/008.rna-codon-table.txt") -> dict:
     rna_prot_map = {}
     with open(filepath, 'r') as f:
         for line in f.readlines():
@@ -26,8 +34,9 @@ def load_rna_codon_table(
                 rna_prot_map[rna_seq] = prot
     return rna_prot_map
 
+
 def load_prot_mass_table(
-    filepath: str="./datasets/020.monoisotopic-mass-table.txt") -> dict:
+        filepath: str = "./datasets/020.monoisotopic-mass-table.txt") -> dict:
     mass_dict = {}
     with open(filepath, 'r') as f:
         for line in f.readlines():

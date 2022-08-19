@@ -2,11 +2,13 @@
 
 from data import load_rna_codon_table
 
+
 def load_data(filepath: str):
     data = ""
     with open(filepath, 'r') as f:
         data = f.readline().replace('\n', '').strip()
     return data
+
 
 def rc_table_2_num_reverse(table_dict: dict):
     amino_list, num_list = [], []
@@ -19,7 +21,8 @@ def rc_table_2_num_reverse(table_dict: dict):
             num_list[amino_list.index(amino)] += 1
     return amino_list, num_list
 
-def infer_mrna_num(prot_seq: str, amino_list: list, num_list: list, module: int=10**6):
+
+def infer_mrna_num(prot_seq: str, amino_list: list, num_list: list, module: int = 10 ** 6):
     total = 1
     for n in prot_seq:
         index = amino_list.index(n)
@@ -27,6 +30,7 @@ def infer_mrna_num(prot_seq: str, amino_list: list, num_list: list, module: int=
         total *= num
     total *= num_list[amino_list.index('Stop')]
     return total % module
+
 
 if __name__ == '__main__':
     path = './datasets/017.mrna.txt'

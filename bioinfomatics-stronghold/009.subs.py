@@ -1,11 +1,11 @@
 # https://rosalind.info/problems/subs/
 
 def load_st(filepath: str):
-    s, t = '', ''
     with open(filepath, 'r') as f:
         s = f.readline().replace('\n', '').strip()
         t = f.readline().replace('\n', '').strip()
     return s, t
+
 
 # naive string matcher
 def find_motif(s: str, t: str):
@@ -15,6 +15,7 @@ def find_motif(s: str, t: str):
             print(f'start: {i}, end: {i + len(t)}')
             pos_list.append(i + 1)
     return pos_list
+
 
 if __name__ == '__main__':
     path = './datasets/009.subs.txt'

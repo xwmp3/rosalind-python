@@ -2,9 +2,10 @@
 
 # Reversal Distance
 
-'''
+"""
 Reversal Distance between two array
-'''
+"""
+
 
 def load_data(filepath: str) -> list:
     pair_list = []
@@ -16,16 +17,18 @@ def load_data(filepath: str) -> list:
             pair_list.append((p1, p2))
     return pair_list
 
+
 def breakpoint(p):
-    ''' Returns a list of elements in the given permutation where a breakpoint
-        occurs.
-    '''
+    """
+    Returns a list of elements in the given permutation where a breakpoint occurs.
+    """
     bp = []
     for i in range(1, len(p)):
-        if abs(p[i] - p[i-1]) > 1:
+        if abs(p[i] - p[i - 1]) > 1:
             bp.append(i)
-    
+
     return bp
+
 
 def reversal_dist(p1, p2):
     ''' Determine the minimum reversal distance for a pair of permutations by
@@ -34,12 +37,12 @@ def reversal_dist(p1, p2):
 
     ''' Perform a quick check to see if the pair is already the same. '''
     if p1 == p2:
-        return(0)
+        return (0)
 
     ''' Prepend 0 and append len(permutation)+1 to determine if endpoints are
         correct. '''
-    p_start = [0] + [p1.index(x)+1 for x in p2] + [len(p1)+1]
-    #print('-'*50, '\n', p_start, ' <-- reverse\n', sep='')
+    p_start = [0] + [p1.index(x) + 1 for x in p2] + [len(p1) + 1]
+    # print('-'*50, '\n', p_start, ' <-- reverse\n', sep='')
 
     ''' Set starting permutations as the best current permutation. '''
     perm_list = [p_start]
@@ -50,8 +53,8 @@ def reversal_dist(p1, p2):
         problem.
     '''
     count = 0
-    while count < len(p_start)+1:
-        #print('Round #%i' % int(count+1))
+    while count < len(p_start) + 1:
+        # print('Round #%i' % int(count+1))
         new_perms = []
 
         count += 1
@@ -61,10 +64,10 @@ def reversal_dist(p1, p2):
 
             ''' Reverse each pair of breakpoints '''
             for i in range(len(bp)):
-                for j in range(i+1, len(bp)):
+                for j in range(i + 1, len(bp)):
                     a = bp[i]
                     b = bp[j]
-                    if b-a > 1:
+                    if b - a > 1:
 
                         p_new = perm[:a] + list(reversed(perm[a:b])) + perm[b:]
                         bp_new = len(breakpoint(p_new))
@@ -75,19 +78,20 @@ def reversal_dist(p1, p2):
                             others.
                         '''
                         if bp_new == 0:
-                            #print('breakpoints = %i' % bp_new)
-                            #printRound(p_new, a, b)
+                            # print('breakpoints = %i' % bp_new)
+                            # printRound(p_new, a, b)
                             return count
                         elif bp_new < bp_min:
-                            #print('breakpoints = %i' % bp_new)
-                            #printRound(p_new, a, b)
+                            # print('breakpoints = %i' % bp_new)
+                            # printRound(p_new, a, b)
                             bp_min = bp_new
                             new_perms = [p_new]
                         elif bp_new == bp_min:
-                            #printRound(p_new, a, b)
+                            # printRound(p_new, a, b)
                             new_perms.append(p_new)
 
         perm_list = new_perms
+
 
 if __name__ == '__main__':
     inpath = './datasets/042.rear.txt'

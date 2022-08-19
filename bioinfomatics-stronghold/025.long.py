@@ -2,6 +2,7 @@
 
 from data import load_fasta
 
+
 # https://noobest.medium.com/rosalind-genome-assembly-as-shortest-superstring-1db2c7408a64
 def get_superstring(reads_list, superstring=''):
     if len(reads_list) == 0:
@@ -26,7 +27,8 @@ def get_superstring(reads_list, superstring=''):
                 if superstring.endswith(current_read[:overlap_length]):
                     reads_list.pop(current_read_index)
                     return get_superstring(reads_list, superstring + current_read[overlap_length:])
-    
+
+
 if __name__ == '__main__':
     inpath = "./datasets/025.long.txt"
     outpath = "./datasets/025.long.out"

@@ -2,9 +2,10 @@
 
 from data import load_fasta
 
+
 def load_data(filepath: str) -> tuple:
-    s1, s2 = load_fasta(filepath)[1]
-    return s1, s2
+    return load_fasta(filepath)[1]
+
 
 def trans_ratio(s1: str, s2: str) -> float:
     transitions = ['AG', 'GA', 'CT', 'TC']
@@ -17,7 +18,8 @@ def trans_ratio(s1: str, s2: str) -> float:
         elif temp in transversions:
             transversion_count += 1
     return transition_count / transversion_count
-    
+
+
 if __name__ == '__main__':
     path = "./datasets/031.tran.txt"
     s1, s2 = load_data(path)

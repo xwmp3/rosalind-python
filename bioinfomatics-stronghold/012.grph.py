@@ -4,15 +4,10 @@ import itertools
 
 from data import load_fasta
 
-def load_fasta_dict(filepath: str):
-    fasta_dict = {}
-    name_list, seq_list = load_fasta(filepath)
-    for i, name in enumerate(name_list):
-        fasta_dict[name] = seq_list[i]
-    return fasta_dict
 
 def is_overlap(s1: str, s2: str, k: int):
     return s1[-k:] == s2[:k]
+
 
 def overlap_graph_edges(data: dict, overlap_k: int):
     edges = []
@@ -23,11 +18,12 @@ def overlap_graph_edges(data: dict, overlap_k: int):
         if is_overlap(s2, s1, overlap_k):
             edges.append((s2_name, s1_name))
     return edges
-    
+
+
 if __name__ == '__main__':
     inpath = './datasets/012.grph.txt'
     outpath = './datasets/012.grph.out'
-    fasta_dict = load_fasta_dict(inpath)
+    fasta_dict = load_fasta(inpath, is_dict=True)
     edges = overlap_graph_edges(fasta_dict, 3)
     with open(outpath, 'w') as f:
         for u, v in edges:

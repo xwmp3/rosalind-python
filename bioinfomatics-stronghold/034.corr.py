@@ -8,8 +8,10 @@ from collections import Counter
 from data import load_fasta
 from utils import hamming_distance, dna_reverse_implement
 
+
 def load_data(filepath: str) -> list:
     return load_fasta(filepath)[1]
+
 
 def seqs_expansion(seqs: str):
     expand_seqs = []
@@ -17,6 +19,7 @@ def seqs_expansion(seqs: str):
         expand_seqs.append(seq)
         expand_seqs.append(dna_reverse_implement(seq))
     return expand_seqs
+
 
 def correct_incorrect(counts, orig_seqs):
     correct = []
@@ -28,6 +31,7 @@ def correct_incorrect(counts, orig_seqs):
             incorrect.append(s)
     return correct, incorrect
 
+
 def error_correction(corrs: list, incorrs: list):
     correct_tuples = []
     for s1 in incorrs:
@@ -36,13 +40,15 @@ def error_correction(corrs: list, incorrs: list):
                 correct_tuples.append((s1, s2))
     return correct_tuples
 
+
 def save_corrections(filepath: str, corrections: List[Tuple]):
     out = open(filepath, 'w')
     for s1, s2 in corrections:
         out.write(f"{s1}->{s2}\n")
     out.close()
     print(f"Save result to {filepath}.")
-    
+
+
 if __name__ == '__main__':
     path = "./datasets/034.corr.txt"
     outpath = "./datasets/034.corr.out"

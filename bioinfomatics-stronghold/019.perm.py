@@ -2,16 +2,19 @@
 
 from itertools import permutations
 
+
 def load_n(filepath: str) -> int:
     n: int = 0
     with open(filepath, 'r') as f:
         n = int(f.readline().replace('\n', '').strip())
     return n
 
+
 def get_permutation_list(n: int):
     n_list = [i for i in range(1, n + 1)]
     print(n_list)
     return [iter_list for iter_list in permutations(n_list)]
+
 
 if __name__ == '__main__':
     path = "./datasets/019.perm.txt"
