@@ -3,10 +3,7 @@
 # Connected Components
 
 """
-Compute the number of connected components in a given `undirected` graph.
-
-Through DFS, we can get one of the connected components of a undirected graph every single search
-So the times for dfs to look over the whole graph is also the number of connected components
+Use depth-first search to compute the number of connected components in a given undirected graph.
 """
 from utils import load_graph_from_edge_list
 
@@ -27,16 +24,17 @@ def connected_components(nodes, graph):
             for neighbor in graph[node]:
                 stack.append(neighbor)
 
-    cc = 0
+    n_visits = 0  # one visit -> one connected component
     for v in nodes:
         if v not in visited:
-            cc += 1
+            n_visits += 1
             dfs(graph, v)
 
-    return cc
+    return n_visits
 
 
 if __name__ == "__main__":
     inpath = "./datasets/010.cc.txt"
     nodes, graph = load_graph_from_edge_list(inpath, undirected=True)
-    print(connected_components(nodes, graph))
+    cc = connected_components(nodes, graph)
+    print(f"There're {cc} connected components in graph.")
