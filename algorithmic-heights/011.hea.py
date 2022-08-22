@@ -2,14 +2,7 @@
 # Building a Heap
 
 import sys
-from utils import list_2_str
-
-
-def load_data(filepath: str) -> (int, list):
-    with open(filepath, 'r') as f:
-        n_elems = int(f.readline().replace('\n', '').strip())
-        elems = [int(item) for item in f.readline().replace('\n', '').strip().split()]
-    return n_elems, elems
+from utils import list_2_str, load_n_list
 
 
 # Python3 implementation of Max Heap
@@ -103,7 +96,7 @@ class MaxHeap:
 if __name__ == "__main__":
     inpath = "./datasets/011.hea.txt"
     outpath = "./datasets/011.hea.out"
-    n, x = load_data(inpath)
+    n, x = load_n_list(inpath)
 
     maxHeap = MaxHeap(n)
     for item in x:

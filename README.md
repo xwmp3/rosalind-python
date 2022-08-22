@@ -89,3 +89,4 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 009 | Breadth-First Search | [bfs](https://rosalind.info/problems/bfs/) | [009.bfs.py](./algorithmic-heights\009.bfs.py) |
 | 010 | Connected Components | [cc](https://rosalind.info/problems/cc/) | [010.cc.py](./algorithmic-heights\010.cc.py) |
 | 011 | Building a Heap | [hea](https://rosalind.info/problems/hea/) | [011.hea.py](./algorithmic-heights\011.hea.py) |
+| 012 | Merge Sort | [ms](https://rosalind.info/problems/ms/) | [012.ms.py](./algorithmic-heights\012.ms.py) |

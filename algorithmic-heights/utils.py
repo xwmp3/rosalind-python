@@ -24,6 +24,13 @@ def load_graph_from_edge_list(filepath: str, undirected: bool = False):
     return nodes, graph
 
 
+def load_n_list(filepath: str) -> (int, list):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        n_elems = int(f.readline().replace('\n', '').strip())
+        elems = [int(item) for item in f.readline().replace('\n', '').strip().split()]
+    return n_elems, elems
+
+
 def breath_first_search(nodes: list, graph: dict, start_node):
     if start_node not in nodes:
         return
@@ -56,4 +63,4 @@ def degree_array(nodes: list, edges: list) -> list:
 
 
 def list_2_str(x: list, sep: str = ' '):
-    return sep.join(str(item) for item in x)
+    return sep.join([str(item) for item in x])

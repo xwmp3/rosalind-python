@@ -5,13 +5,7 @@
 """
 Count the number of swaps performed be INSERTION SORT algorithm
 """
-
-
-def load_data(filepath: str) -> (int, list):
-    with open(filepath, 'r') as f:
-        n = int(f.readline().replace('\n', '').strip())
-        x = [int(item) for item in f.readline().replace('\n', '').strip().split()]
-    return n, x
+from utils import load_n_list
 
 
 def swap(x: list, index1: int, index2: int):
@@ -20,20 +14,20 @@ def swap(x: list, index1: int, index2: int):
     x[index2] = temp
 
 
-def insertion_sort_with_swap_counter(x: list) -> (list, int):
+def insertion_sort_with_swap_counter(arr: list) -> (list, int):
     swap_count = 0
-    for i in range(1, len(x)):
+    for i in range(1, len(arr)):
         k = i
-        while k > 0 and x[k] < x[k - 1]:
+        while k > 0 and arr[k] < arr[k - 1]:
             swap_count += 1
-            swap(x, k - 1, k)
+            swap(arr, k - 1, k)
             k = k - 1
-    return x, swap_count
+    return arr, swap_count
 
 
 if __name__ == "__main__":
     inpath = "./datasets/004.ins.txt"
-    n, x = load_data(inpath)
+    n, x = load_n_list(inpath)
     print(n, x)
     x_new, count = insertion_sort_with_swap_counter(x)
     print(count)

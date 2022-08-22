@@ -5,6 +5,12 @@ Get Fibonacci Number in Recursive
 """
 
 
+def load_n(filepath: str):
+    with open(filepath, 'r') as f:
+        n = int(f.readline().replace('\n', '').strip())
+    return n
+
+
 def fib_recursive(n: int):
     if n == 0:
         return 0
@@ -12,12 +18,6 @@ def fib_recursive(n: int):
         return 1
     else:
         return fib_recursive(n - 1) + fib_recursive(n - 2)
-
-
-def load_n(filepath: str):
-    with open(filepath, 'r') as f:
-        n = int(f.readline().replace('\n', '').strip())
-    return n
 
 
 if __name__ == "__main__":

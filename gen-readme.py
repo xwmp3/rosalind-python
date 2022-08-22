@@ -28,18 +28,25 @@ if __name__ == '__main__':
     md.write('Solution in Python for problems in [ROSALIND](https://rosalind.info/)\n\n')  # description
 
     basedir = './'
-    dirnames = ['bioinfomatics-stronghold', 'bioinfomatics-armory', 'bioinfomatics-textbook-track',
-                'algorithmic-heights']
-    locnames = ['Bioinfomatics Stronghold', 'Bioinfomatics Armory', 'Bioinfomatics Textbook Track',
-                'Algorithmic Heights']
+    dir_dict = {
+        'bioinfomatics-stronghold': 'Bioinfomatics Stronghold',
+        'bioinfomatics-armory': 'Bioinfomatics Armory',
+        'bioinfomatics-textbook-track': 'Bioinfomatics Textbook Track',
+        'algorithmic-heights': 'Algorithmic Heights'
+    }
+    # dirnames = ['bioinfomatics-stronghold', 'bioinfomatics-armory', 'bioinfomatics-textbook-track',
+    #             'algorithmic-heights']
+    # locnames = ['Bioinfomatics Stronghold', 'Bioinfomatics Armory', 'Bioinfomatics Textbook Track',
+    #             'Algorithmic Heights']
 
-    for i, dirname in enumerate(dirnames):
-        md.write(f'\n## {locnames[i]}\n\n')  # Category Title
+    for dirname in dir_dict.keys():
+        md.write(f'\n## {dir_dict[dirname]}\n\n')  # Category Title
         md.write('\n| No. | Title | URL | Script |\n| :----- | :----- | :---- | :---- |\n')  # table header
         dirpath = os.path.join(basedir, dirname)
         pyfiles = []
         for name in os.listdir(dirpath):
-            if not fnmatch(name, "*.*.py"): continue
+            if not fnmatch(name, "*.*.py"):
+                continue
             pyfiles.append(name)
         logging.info(f"Get {len(pyfiles)} solution script file(s) in {dirpath}")
         for i, name in enumerate(sorted(pyfiles)):
