@@ -16,11 +16,14 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 
     readme_path = "./README.md"
+    logo_path = "./rosalind-logo.jpg"
 
     md = open(readme_path, 'w')
 
     md.write(
-        '<img src="https://s2.loli.net/2022/07/04/rD5a9fk21iVJ7KG.jpg" alt="drawing" width="450"/>\n\n')  # header image
+        '<img src="{}" alt="drawing" width="450"/>\n\n'
+        .format(logo_path)
+    )  # header image
     md.write('# rosalind-python\n\n')  # repo title
     md.write('Solution in Python for problems in [ROSALIND](https://rosalind.info/)\n\n')  # description
 
