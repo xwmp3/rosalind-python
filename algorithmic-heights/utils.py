@@ -53,3 +53,7 @@ def degree_array(nodes: list, edges: list) -> list:
         da_dict[start_node] += 1
         da_dict[end_node] += 1
     return [da_dict[node] for node in nodes]
+
+
+def list_2_str(x: list, sep: str = ' '):
+    return sep.join(str(item) for item in x)
