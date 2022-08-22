@@ -42,7 +42,7 @@ if __name__ == '__main__':
         for i, name in enumerate(sorted(pyfiles)):
             index_prefix = f"[{i + 1}/{len(pyfiles)}]"
             filepath = os.path.join(dirpath, name)
-            with open(filepath, 'r') as pyfile:
+            with open(filepath, 'r', encoding='utf-8') as pyfile:
                 no = name.split('.')[0]
                 url = pyfile.readline().replace('\n', '').strip().split()[1]
                 logging.info(f"{index_prefix} Requesting URL: {url}")
