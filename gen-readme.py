@@ -34,21 +34,19 @@ if __name__ == '__main__':
         'bioinfomatics-textbook-track': 'Bioinfomatics Textbook Track',
         'algorithmic-heights': 'Algorithmic Heights'
     }
-    # dirnames = ['bioinfomatics-stronghold', 'bioinfomatics-armory', 'bioinfomatics-textbook-track',
-    #             'algorithmic-heights']
-    # locnames = ['Bioinfomatics Stronghold', 'Bioinfomatics Armory', 'Bioinfomatics Textbook Track',
-    #             'Algorithmic Heights']
 
     for dirname in dir_dict.keys():
         md.write(f'\n## {dir_dict[dirname]}\n\n')  # Category Title
         md.write('\n| No. | Title | URL | Script |\n| :----- | :----- | :---- | :---- |\n')  # table header
         dirpath = os.path.join(basedir, dirname)
+        # get pyfiles in dirpath
         pyfiles = []
         for name in os.listdir(dirpath):
             if not fnmatch(name, "*.*.py"):
                 continue
             pyfiles.append(name)
         logging.info(f"Get {len(pyfiles)} solution script file(s) in {dirpath}")
+        # get info of each problem
         for i, name in enumerate(sorted(pyfiles)):
             index_prefix = f"[{i + 1}/{len(pyfiles)}]"
             filepath = os.path.join(dirpath, name)

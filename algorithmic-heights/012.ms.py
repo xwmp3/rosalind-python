@@ -7,6 +7,7 @@ from utils import load_n_list, list_2_str
 
 # divide and conquer strategy
 # merge sort algorithm implementation in Python
+# 归并排序
 def merge_sort(arr: list):
     if len(arr) > 1:
         mid = len(arr) // 2
