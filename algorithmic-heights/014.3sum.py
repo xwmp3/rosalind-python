@@ -2,17 +2,13 @@
 
 # 3SUM
 
-from utils import load_arrs, list_2_str
+from utils import timer, load_arrs, list_2_str, sort_with_pos
 
 
 # https://www.cnblogs.com/grandyang/p/4481576.html
+@timer
 def three_sum(x: list) -> list:
-    elem_pos_tuples = [(x[pos], pos) for pos in range(len(x))]  # 本题需要输出原数组中的pos triplets，所以给他先记下
-    elem_pos_tuples = sorted(elem_pos_tuples, key=lambda t: t[0])  # 输入的数组中肯定有正数和负数，排序后负数在前面
-
-    # 排序完了拆开
-    sorted_x = [t[0] for t in elem_pos_tuples]
-    sorted_pos = [t[1] for t in elem_pos_tuples]
+    sorted_x, sorted_pos = sort_with_pos(x)  # 带着原本的下标一起排序
 
     index_triplets = set()
     for k in range(0, len(sorted_x) - 2):

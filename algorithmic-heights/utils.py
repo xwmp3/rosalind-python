@@ -1,4 +1,14 @@
-import numpy as np
+def timer(func):
+    def func_wrapper(*args, **kwargs):
+        from time import time
+        time_start = time()
+        result = func(*args, **kwargs)
+        time_end = time()
+        print('{0} cost time {1} s'.format(func.__name__, time_end - time_start))
+
+        return result
+
+    return func_wrapper
 
 
 def load_edge_list(filepath: str) -> (list, list):
@@ -76,3 +86,13 @@ def list_2_str(x: list, sep: str = ' '):
 
 def swap(arr: list, pos1: int, pos2: int):
     arr[pos1], arr[pos2] = arr[pos2], arr[pos1]
+
+
+def sort_with_pos(x: list) -> (list, list):
+    elem_pos_tuples = [(x[pos], pos) for pos in range(len(x))]
+    elem_pos_tuples = sorted(elem_pos_tuples, key=lambda t: t[0])
+
+    sorted_x = [t[0] for t in elem_pos_tuples]
+    sorted_pos = [t[1] for t in elem_pos_tuples]
+
+    return sorted_x, sorted_pos
