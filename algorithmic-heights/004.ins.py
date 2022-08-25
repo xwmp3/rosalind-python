@@ -5,13 +5,7 @@
 """
 Count the number of swaps performed be INSERTION SORT algorithm
 """
-from utils import load_n_list
-
-
-def swap(x: list, index1: int, index2: int):
-    temp = x[index1]
-    x[index1] = x[index2]
-    x[index2] = temp
+from utils import load_n_list, swap
 
 
 def insertion_sort_with_swap_counter(arr: list) -> (list, int):

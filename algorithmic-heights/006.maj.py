@@ -9,12 +9,7 @@ Count and get the majority element of list
 
 from collections import Counter
 
-
-def load_data(filepath: str) -> (int, int, list):
-    with open(filepath, 'r') as f:
-        k, n = [int(item) for item in f.readline().replace('\n', '').strip().split()]
-        num_list = [[int(item) for item in f.readline().replace('\n', '').strip().split()] for _ in range(k)]
-    return k, n, num_list
+from utils import load_arrs
 
 
 def majority_element(x: list) -> int:
@@ -29,7 +24,7 @@ def majority_element(x: list) -> int:
 
 if __name__ == '__main__':
     inpath = "./datasets/006.maj.txt"
-    k, n, num_list = load_data(inpath)
+    k, n, num_list = load_arrs(inpath)
     # print(k, n)
     # print(num_list)
     result = [majority_element(x) for x in num_list]

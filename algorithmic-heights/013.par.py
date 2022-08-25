@@ -1,11 +1,7 @@
 # https://rosalind.info/problems/par/
 # 2-Way Partition
 
-from utils import load_n_list, list_2_str
-
-
-def swap(arr: list, pos1: int, pos2: int):
-    arr[pos1], arr[pos2] = arr[pos2], arr[pos1]
+from utils import load_n_list, list_2_str, swap
 
 
 def partition(arr: list, p: int, r: int) -> int:

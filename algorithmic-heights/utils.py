@@ -31,6 +31,14 @@ def load_n_list(filepath: str) -> (int, list):
     return n_elems, elems
 
 
+def load_arrs(filepath: str) -> (int, int, list):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        n_arrs, arr_len = [int(item) for item in f.readline().replace('\n', '').strip().split()]
+        arrs = [[int(elem) for elem in f.readline().replace('\n', '').strip().split()] for _ in range(n_arrs)]
+    print(f"Load {n_arrs} lists, each list has {arr_len} elems")
+    return n_arrs, arr_len, arrs
+
+
 def breath_first_search(nodes: list, graph: dict, start_node):
     if start_node not in nodes:
         return
@@ -64,3 +72,7 @@ def degree_array(nodes: list, edges: list) -> list:
 
 def list_2_str(x: list, sep: str = ' '):
     return sep.join([str(item) for item in x])
+
+
+def swap(arr: list, pos1: int, pos2: int):
+    arr[pos1], arr[pos2] = arr[pos2], arr[pos1]

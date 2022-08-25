@@ -1,14 +1,7 @@
 # https://rosalind.info/problems/2sum/
 
 # 2SUM
-
-def load_data(filepath: str) -> list:
-    with open(filepath, 'r') as f:
-        k, n = [int(item) for item in f.readline().replace('\n', '').strip().split()]
-        arrays = []
-        for i in range(k):
-            arrays.append([int(item) for item in f.readline().replace('\n', '').strip().split()])
-    return arrays
+from utils import load_arrs
 
 
 def two_sum_indices(x: list):
@@ -29,7 +22,7 @@ if __name__ == '__main__':
     inpath = "./datasets/008.2sum.txt"
     outpath = "./datasets/008.2sum.out"
 
-    Xs = load_data(inpath)
+    _, _, Xs = load_arrs(inpath)
 
     res = [two_sum_indices(x) for x in Xs]
 
