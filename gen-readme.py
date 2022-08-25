@@ -49,7 +49,8 @@ if __name__ == '__main__':
         # get info of each problem
         for i, name in enumerate(sorted(pyfiles)):
             index_prefix = f"[{i + 1}/{len(pyfiles)}]"
-            filepath = os.path.join(dirpath, name)
+            # filepath = os.path.join(dirpath, name)
+            filepath = f"{dirpath}/{name}"
             with open(filepath, 'r', encoding='utf-8') as pyfile:
                 no = name.split('.')[0]
                 url = pyfile.readline().replace('\n', '').strip().split()[1]
