@@ -56,3 +56,7 @@ def motif_prob(s: str, gc_content: float):
             prob *= gc_prob
 
     return prob
+
+
+def list_2_str(x: list, sep: str = ' '):
+    return sep.join([str(item) for item in x])

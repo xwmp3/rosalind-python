@@ -2,21 +2,7 @@
 
 # 2SUM
 from utils import timer, load_arrs, sort_with_pos
-
-
-@timer
-def two_sum_indices(x: list):
-    """
-    iterate over a two-dimensional array
-    @param x:
-    @return:
-    """
-    for i in range(len(x)):
-        for j in range(i + 1, len(x)):
-            # print(x[i], x[j], x[i] + x[j] == 0)
-            if x[i] + x[j] == 0:
-                return i + 1, j + 1
-    return -1
+from itertools import permutations
 
 
 @timer
@@ -37,34 +23,55 @@ def two_sum(x: list):
             if len(index_tuples) == 1:
                 break
 
-            if sorted_x[j] == target:  # 第二个数要么等于目标数，要么大于目标数
+            if sorted_x[j] == target:  # 第二个数等于target
                 index_tuples.add((i, j))
                 while i < j and sorted_x[j] == sorted_x[j - 1]:
-                    j -= 1
+                    j -= 1  # 跳过重复的数字
                 i += 1
                 j -= 1
-            else:
+            elif sorted_x[j] > target:  # 大于target，下标减一
                 j -= 1
+            else:  # 小于target，不存在这么个适合的数，直接退出吧
+                break
 
     print(f"Get {len(index_tuples)} tuples")
 
     return [sorted([sorted_pos[index] + 1 for index in t]) for t in index_tuples]
 
 
+@timer
+def two_sum_in_double_for_loop(x: list):
+    for i in range(len(x)):
+        for j in range(i + 1, len(x)):
+            # print(x[i], x[j], x[i] + x[j] == 0)
+            if x[i] + x[j] == 0:
+                return i + 1, j + 1
+    return -1
+
+
+@timer
+def two_sum_with_perm(x: list):
+    ret = -1
+    for (i, j) in permutations([idx for idx in range(len(x))], r=2):
+        if x[i] == -x[j]:
+            ret = (i + 1, j + 1)
+            break
+    return ret
+
+
 if __name__ == '__main__':
     inpath = "./datasets/008.2sum.txt"
     outpath = "./datasets/008.2sum.out"
 
-    _, _, Xs = load_arrs(inpath)
+    _, _, arrs = load_arrs(inpath)
 
-    for x in Xs:
-        tuples = two_sum(x)
-
-        if len(tuples) != 0:
+    for arr in arrs:
+        tuples = two_sum(arr)
+        if len(tuples) != 0:  # check result
             pos1, pos2 = tuples[0]
-            print(x[pos1 - 1] + x[pos2 - 1])
+            print(pos1, pos2, arr[pos1 - 1] + arr[pos2 - 1] == 0)
 
-    res = [two_sum_indices(x) for x in Xs]
+    res = [two_sum_with_perm(x) for x in arrs]
 
     outstr = ""
     for item in res:
