@@ -48,8 +48,8 @@ if __name__ == '__main__':
         logging.info(f"Get {len(pyfiles)} solution script file(s) in {dirpath}")
         # get info of each problem
         for i, name in enumerate(sorted(pyfiles)):
-            index_prefix = f"[{i + 1}/{len(pyfiles)}]"
-            # filepath = os.path.join(dirpath, name)
+            n_files = len(pyfiles)
+            index_prefix = f"[{str(i + 1).zfill(len(str(n_files)))}/{n_files}]"
             filepath = f"{dirpath}/{name}"
             with open(filepath, 'r', encoding='utf-8') as pyfile:
                 no = name.split('.')[0]

@@ -27,7 +27,6 @@ def printShortestSuperSeq(m, n, x, y):
     # Fill table in bottom up manner
     for i in range(m + 1):
         for j in range(n + 1):
-
             # Below steps follow recurrence relation
             if i == 0:
                 dp[i][j] = j
@@ -53,32 +52,25 @@ def printShortestSuperSeq(m, n, x, y):
     i = m
     j = n
     while i * j > 0:
-
         # If current character in X and Y are same,
         # then current character is part of
         # shortest supersequence
         if x[i - 1] == y[j - 1]:
-
             # Put current character in result
             string = x[i - 1] + string
-
             # reduce values of i, j and index
             i -= 1
             j -= 1
 
         # If current character in X and Y are different
         elif dp[i - 1][j] > dp[i][j - 1]:
-
             # Put current character of Y in result
             string = y[j - 1] + string
-
             # reduce values of j and index
             j -= 1
         else:
-
             # Put current character of X in result
             string = x[i - 1] + string
-
             # reduce values of i and index
             i -= 1
 
