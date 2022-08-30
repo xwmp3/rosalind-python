@@ -4,7 +4,7 @@
 # idea
 .idea
 
-# jupyter lab
+# jupyter
 *.ipynb
 .ipynb_checkpoints
 
