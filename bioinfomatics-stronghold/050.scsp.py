@@ -2,7 +2,7 @@
 
 # Interleaving Two Motifs
 
-# 最短共同超序列问题
+# 求两个序列的最短共同超序列
 # 字符串、动态规划、状态方程、递归
 
 def load_data(filepath: str) -> tuple:

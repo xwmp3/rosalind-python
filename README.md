@@ -60,6 +60,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 048 | Motzkin Numbers and RNA Secondary Structures | [motz](https://rosalind.info/problems/motz/) | [048.motz.py](./bioinfomatics-stronghold/048.motz.py) |
 | 049 | Distances in Trees | [nwck](https://rosalind.info/problems/nwck/) | [049.nwck.py](./bioinfomatics-stronghold/049.nwck.py) |
 | 050 | Interleaving Two Motifs | [scsp](https://rosalind.info/problems/scsp/) | [050.scsp.py](./bioinfomatics-stronghold/050.scsp.py) |
+| 051 | Introduction to Set Operations | [seto](https://rosalind.info/problems/seto/) | [051.seto.py](./bioinfomatics-stronghold/051.seto.py) |
 
 ## Bioinfomatics Armory
 
