@@ -17,16 +17,17 @@ def load_data(filepath: str):
     return path_string, prs_dict
 
 
-def path_pr(path_str: str, prs_dict: dict):
+def path_pr(path: str, prs: dict):
     pr = 0.5
     for i in range(0, len(path_str) - 1):
-        key = path_str[i:i + 2]
-        pr *= pr_dict[key]
+        key = path[i:i + 2]
+        pr *= prs[key]
     return pr
 
 
 if __name__ == '__main__':
-    path = './datasets/001.ba10a.txt'
-    path_string, pr_dict = load_data(path)
-    print(path_string, pr_dict)
-    print(path_pr(path_string, pr_dict))
+    inpath = './datasets/001.ba10a.in'
+    extra_inpath = "./datasets/001.ba10a.extra.in"
+    path_str, pr_dict = load_data(extra_inpath)
+    print(path_str, pr_dict)
+    print(path_pr(path_str, pr_dict))
