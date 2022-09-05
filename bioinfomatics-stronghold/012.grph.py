@@ -21,7 +21,7 @@ def overlap_graph_edges(data: dict, overlap_k: int):
 
 
 if __name__ == '__main__':
-    inpath = './datasets/012.grph.txt'
+    inpath = './datasets/012.grph.in'
     outpath = './datasets/012.grph.out'
     fasta_dict = load_fasta(inpath, is_dict=True)
     edges = overlap_graph_edges(fasta_dict, 3)

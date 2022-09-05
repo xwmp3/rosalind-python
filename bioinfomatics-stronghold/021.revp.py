@@ -16,7 +16,7 @@ def palindromic_recognition_site(seq1: str):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/021.revp.txt"
+    inpath = "./datasets/021.revp.in"
     outpath = "./datasets/021.revp.out"
     seq = load_fasta(inpath)[1][0]
     with open(outpath, 'w') as f:

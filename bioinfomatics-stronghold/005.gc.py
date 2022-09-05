@@ -13,7 +13,7 @@ def gc_content(seq: str):
 
 
 if __name__ == "__main__":
-    path = './datasets/005.gc.txt'
+    path = 'datasets/005.gc.in'
     names, seqs = load_fasta(path)
     gc_content_list = [gc_content(seq) * 100 for seq in seqs]
     highest_index = np.argmax(gc_content_list)

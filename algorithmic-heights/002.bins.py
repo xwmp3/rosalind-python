@@ -23,7 +23,7 @@ def binary_search(arr, start, end, hkey):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/002.bins.txt"
+    inpath = "./datasets/002.bins.in"
     outpath = "./datasets/002.bins.out"
     A, K = load_data(inpath)
     results = [index + 1 if index != -1 else -1 for index in [binary_search(A, 0, len(A) - 1, k) for k in K]]

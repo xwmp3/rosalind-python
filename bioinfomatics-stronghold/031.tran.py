@@ -21,6 +21,6 @@ def trans_ratio(s1: str, s2: str) -> float:
 
 
 if __name__ == '__main__':
-    path = "./datasets/031.tran.txt"
+    path = "datasets/031.tran.in"
     s1, s2 = load_data(path)
     print(trans_ratio(s1, s2))

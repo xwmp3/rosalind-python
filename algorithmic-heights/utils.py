@@ -15,9 +15,9 @@ def load_edge_list(filepath: str) -> (list, list):
     n, m, nodes, edges = 0, 0, [], []
     with open(filepath, 'r') as f:
         # n->number of nodes, m->number of edges
-        n, m = [int(item) for item in f.readline().replace('\n', '').strip().split()]
+        n, m = [int(item) for item in f.readline().strip().split()]
         for _ in range(m):  # read edges
-            start_node, end_node = [int(item) for item in f.readline().replace('\n', '').strip().split()]
+            start_node, end_node = [int(item) for item in f.readline().strip().split()]
             edges.append((start_node, end_node))
         nodes = [item for item in range(1, n + 1)]
     print(f"Load {len(edges)} edges, {len(nodes)} nodes from {filepath}")
@@ -36,15 +36,15 @@ def load_graph_from_edge_list(filepath: str, undirected: bool = False):
 
 def load_n_list(filepath: str) -> (int, list):
     with open(filepath, 'r', encoding='utf-8') as f:
-        n_elems = int(f.readline().replace('\n', '').strip())
-        elems = [int(item) for item in f.readline().replace('\n', '').strip().split()]
+        n_elems = int(f.readline().strip())
+        elems = [int(item) for item in f.readline().strip().split()]
     return n_elems, elems
 
 
 def load_arrs(filepath: str) -> (int, int, list):
     with open(filepath, 'r', encoding='utf-8') as f:
-        n_arrs, arr_len = [int(item) for item in f.readline().replace('\n', '').strip().split()]
-        arrs = [[int(elem) for elem in f.readline().replace('\n', '').strip().split()] for _ in range(n_arrs)]
+        n_arrs, arr_len = [int(item) for item in f.readline().strip().split()]
+        arrs = [[int(elem) for elem in f.readline().strip().split()] for _ in range(n_arrs)]
     print(f"Load {n_arrs} lists, each list has {arr_len} elems")
     return n_arrs, arr_len, arrs
 

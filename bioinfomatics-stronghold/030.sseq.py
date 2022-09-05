@@ -20,6 +20,6 @@ def subseq_pos(s: str, t: str):
 
 
 if __name__ == '__main__':
-    path = "./datasets/030.sseq.txt"
+    path = "datasets/030.sseq.in"
     s, t = load_data(path)
     print(' '.join([str(d) for d in subseq_pos(s, t)]))

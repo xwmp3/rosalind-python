@@ -20,7 +20,7 @@ def rna2prot(rna_prot_map: dict, seq: str):
 
 
 if __name__ == "__main__":
-    data_path = "./datasets/008.prot.txt"
+    data_path = "datasets/008.prot.in"
     rna_prot_map = load_rna_codon_table()
     rna_seq = load_data(data_path)
     print(rna2prot(rna_prot_map, rna_seq))

@@ -15,7 +15,7 @@ def load_data(filepath: str) -> Tuple[str, str]:
 
 
 if __name__ == "__main__":
-    path = './datasets/006.hamm.txt'
+    path = 'datasets/006.hamm.in'
     s1, s2 = load_data(path)
     print(s1, s2)
     print(hamming_distance(s1, s2))

@@ -26,7 +26,7 @@ def noncrossing_perfect_matches_recursive(seq: str, cache: dict):
 
 
 if __name__ == '__main__':
-    path = "./datasets/033.cat.txt"
+    path = "datasets/033.cat.in"
     modulo = 10 ** 6
     seq = load_data(path)
     init_cache = {

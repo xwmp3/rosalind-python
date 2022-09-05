@@ -25,7 +25,7 @@ def rabbit_fib_non_recursive(n: int, k: int):
 
 
 if __name__ == "__main__":
-    path = "./datasets/004.fib.txt"
+    path = "datasets/004.fib.in"
     n, k = load_data(path)
     print(f"recursive:\t{rabbit_fib_recursive(n, k)}")
     print(f"non-recursive:\t{rabbit_fib_non_recursive(n, k)}")

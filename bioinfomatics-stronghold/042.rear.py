@@ -94,7 +94,7 @@ def reversal_dist(p1, p2):
 
 
 if __name__ == '__main__':
-    inpath = './datasets/042.rear.txt'
+    inpath = './datasets/042.rear.in'
     pairs = load_data(inpath)
     res = [min(reversal_dist(p1, p2), reversal_dist(p2, p1)) for (p1, p2) in pairs]
     print(' '.join([str(item) for item in res]))

@@ -94,7 +94,7 @@ def merge_lists(x1: list, x2: list):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/007.mer.txt"
+    inpath = "./datasets/007.mer.in"
     outpath = "./datasets/007.mer.out"
     x1, x2 = load_data(inpath)
     result = LinkedList()

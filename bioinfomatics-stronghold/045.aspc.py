@@ -27,6 +27,6 @@ def alternative_splicing_counts(n: int, m: int, module: int = 10 ** 6) -> int:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/045.aspc.txt"
+    inpath = "./datasets/045.aspc.in"
     n, m = load_data(inpath)
     print(alternative_splicing_counts(n, m))

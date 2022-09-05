@@ -38,7 +38,7 @@ def noncrossing_matches_recursive(seq: str, cache: dict) -> int:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/048.motz.txt"
+    inpath = "./datasets/048.motz.in"
     module = 10 ** 6
     seq = load_data(inpath)
     print(seq)

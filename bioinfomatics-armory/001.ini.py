@@ -17,7 +17,7 @@ def count_nucleotides(seq: str, nmap: str = "ACGT"):
 
 
 if __name__ == "__main__":
-    inpath = './datasets/001.ini.txt'
+    inpath = './datasets/001.ini.in'
     seq = load_data(inpath)
     print(f"Seq length: {len(seq)}")
     print(' '.join([str(count) for count in count_nucleotides(seq)]))

@@ -16,7 +16,7 @@ def rna_2_prot(seq: str, codon_map: dict, start_codon: str = 'AUG') -> list:
 
 
 if __name__ == '__main__':
-    path = './datasets/018.orf.txt'
+    path = 'datasets/018.orf.in'
     data = load_fasta(path)[1][0]
     rna_codon_map = load_rna_codon_table()
     seqs = [data, dna_reverse_implement(data)]

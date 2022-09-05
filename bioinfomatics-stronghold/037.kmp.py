@@ -22,7 +22,7 @@ def failure_array(s: str) -> list:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/037.kmp.txt"
+    inpath = "./datasets/037.kmp.in"
     outpath = "./datasets/037.kmp.out"
 
     seq = load_data(inpath)

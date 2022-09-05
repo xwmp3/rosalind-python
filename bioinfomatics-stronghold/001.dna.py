@@ -10,7 +10,7 @@ def load_data(filepath: str) -> str:
 
 
 if __name__ == "__main__":
-    inpath = './datasets/001.dna.txt'
+    inpath = './datasets/001.dna.in'
     seq = load_data(inpath)
     print(len(seq))
     print(' '.join([str(count) for count in count_nucleotides(seq)]))

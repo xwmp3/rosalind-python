@@ -90,7 +90,7 @@ def printShortestSuperSeq(m, n, x, y):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/050.scsp.txt"
+    inpath = "./datasets/050.scsp.in"
     motif1, motif2 = load_data(inpath)
     print(motif1, motif2)
 

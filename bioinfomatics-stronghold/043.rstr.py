@@ -22,7 +22,7 @@ def random_motif_prob(n_motifs: int, gc_content: float, target_seq: str):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/043.rstr.txt"
+    inpath = "./datasets/043.rstr.in"
     n, gc, s = load_data(inpath)
     prob = random_motif_prob(n, gc, s)
     print(prob)

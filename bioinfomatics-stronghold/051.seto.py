@@ -20,7 +20,7 @@ def set_operations(set_u: set, set_a: set, set_b: set):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/051.seto.txt"
+    inpath = "./datasets/051.seto.in"
     outpath = "./datasets/051.seto.out"
     u, a, b = load_data(inpath)
     with open(outpath, 'w', encoding='utf-8') as outfile:

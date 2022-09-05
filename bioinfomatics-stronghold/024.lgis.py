@@ -39,7 +39,7 @@ def longest_increasing_subseq(N: int, X: list) -> np.ndarray:
 
 
 if __name__ == '__main__':
-    path = "./datasets/024.lgis.txt"
+    path = "datasets/024.lgis.in"
     n, X = load_data(path)
     print(' '.join([str(item) for item in longest_increasing_subseq(n, X)]))
     print(' '.join([str(item) for item in longest_increasing_subseq(n, X[::-1])[::-1]]))

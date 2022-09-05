@@ -24,7 +24,7 @@ def signed_permute(n: int) -> list:
 
 
 if __name__ == '__main__':
-    path = "./datasets/029.sign.txt"
+    path = "datasets/029.sign.in"
     n = load_data(path)
     permutes = signed_permute(n)
     print(len(permutes))

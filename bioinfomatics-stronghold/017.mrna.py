@@ -33,7 +33,7 @@ def infer_mrna_num(prot_seq: str, amino_list: list, num_list: list, module: int 
 
 
 if __name__ == '__main__':
-    path = './datasets/017.mrna.txt'
+    path = 'datasets/017.mrna.in'
     prot_seq = load_data(path)
     print(prot_seq)
     aminos, nums = rc_table_2_num_reverse(load_rna_codon_table())

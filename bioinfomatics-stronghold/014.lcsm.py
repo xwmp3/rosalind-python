@@ -51,7 +51,7 @@ def longest_common_substring2(data: list):
 
 
 if __name__ == '__main__':
-    path = './datasets/014.lcsm.txt'
+    path = 'datasets/014.lcsm.in'
     names, seqs = load_fasta(path)
     lcs = longest_common_substring1(seqs)
     print(lcs)

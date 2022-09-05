@@ -25,6 +25,6 @@ def ida_binom(k: int, N: int):
 
 
 if __name__ == '__main__':
-    path = './datasets/015.lia.txt'
+    path = 'datasets/015.lia.in'
     k, N = load_data(path)
     print(f"k: {k}, N: {N}.\nProb of 'AaBb': {ida_binom(k, N)}")

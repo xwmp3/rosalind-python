@@ -37,6 +37,6 @@ def edit_distance(seq1: str, seq2: str) -> int:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/046.edit.txt"
+    inpath = "./datasets/046.edit.in"
     s1, s2 = load_data(inpath)
     print(edit_distance(s1, s2))

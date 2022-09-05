@@ -38,7 +38,7 @@ def merge_sort(arr: list):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/012.ms.txt"
+    inpath = "./datasets/012.ms.in"
     outpath = "./datasets/012.ms.out"
     n, x = load_n_list(inpath)
     print("Origin Data: \n{}".format(list_2_str(x)))

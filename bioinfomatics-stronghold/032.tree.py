@@ -15,7 +15,7 @@ def tree_need_edges(n_nodes: int, edges: list) -> int:
 
 
 if __name__ == '__main__':
-    path = "./datasets/032.tree.txt"
+    path = "datasets/032.tree.in"
     num_nodes, edges = load_data(path)
     print(num_nodes, edges)
     print(tree_need_edges(num_nodes, edges))

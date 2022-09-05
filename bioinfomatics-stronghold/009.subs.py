@@ -18,7 +18,7 @@ def find_motif(s: str, t: str):
 
 
 if __name__ == '__main__':
-    path = './datasets/009.subs.txt'
+    path = 'datasets/009.subs.in'
     s, t = load_st(path)
     pos_list = find_motif(s, t)
     print(' '.join([str(pos) for pos in pos_list]))

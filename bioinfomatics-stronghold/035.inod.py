@@ -12,6 +12,6 @@ def count_internal_nodes(n_leaves: int) -> int:
 
 
 if __name__ == '__main__':
-    path = "./datasets/035.inod.txt"
+    path = "datasets/035.inod.in"
     n = load_data(path)
     print(count_internal_nodes(n))

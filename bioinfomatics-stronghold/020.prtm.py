@@ -15,7 +15,7 @@ def calc_prot_mass(seq: str, mass_dict: dict) -> float:
 
 
 if __name__ == '__main__':
-    path = "./datasets/020.prtm.txt"
+    path = "datasets/020.prtm.in"
     mass_dict = load_prot_mass_table()
     prot_seq = load_data(path)
     print(calc_prot_mass(prot_seq, mass_dict))

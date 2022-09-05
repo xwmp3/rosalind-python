@@ -23,7 +23,7 @@ def majority_element(x: list) -> int:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/006.maj.txt"
+    inpath = "./datasets/006.maj.in"
     k, n, num_list = load_arrs(inpath)
     # print(k, n)
     # print(num_list)

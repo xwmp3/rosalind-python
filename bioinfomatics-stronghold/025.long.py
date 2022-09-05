@@ -30,7 +30,7 @@ def get_superstring(reads_list, superstring=''):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/025.long.txt"
+    inpath = "./datasets/025.long.in"
     outpath = "./datasets/025.long.out"
     seqs = load_fasta(inpath)[1]
     super_string = get_superstring(seqs)

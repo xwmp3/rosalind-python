@@ -22,7 +22,7 @@ def partition(arr: list, p: int, r: int) -> int:
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/013.par.txt"
+    inpath = "./datasets/013.par.in"
     outpath = "./datasets/013.par.out"
     n, x = load_n_list(inpath)
     print("Origin Data: \n{}".format(list_2_str(x)))

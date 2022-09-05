@@ -27,7 +27,7 @@ def rna2prot(rna_prot_map: dict, seq: str):
 
 
 if __name__ == '__main__':
-    path = "./datasets/022.splc.txt"
+    path = "datasets/022.splc.in"
     codon_map = load_rna_codon_table()
     dna, introns = load_data(path)
     exon_concat = get_exon_concatenated(dna, introns)

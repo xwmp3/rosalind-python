@@ -17,6 +17,6 @@ def expected_p_for_dominant_offspring(pair_nums: list):
 
 
 if __name__ == '__main__':
-    path = './datasets/013.iev.txt'
+    path = 'datasets/013.iev.in'
     pair_nums = load_data(path)
     print(expected_p_for_dominant_offspring(pair_nums))

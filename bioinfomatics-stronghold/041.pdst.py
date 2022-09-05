@@ -31,7 +31,7 @@ def save_d_matrix(filepath: str, d_mat: np.ndarray, n_round: int):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/041.pdst.txt"
+    inpath = "./datasets/041.pdst.in"
     outpath = "./datasets/041.pdst.out"
     seq_length, seqs = load_data(inpath)
     print(f"seq length: {seq_length}\nfasta seq: {seqs}")

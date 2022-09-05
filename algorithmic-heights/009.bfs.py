@@ -5,7 +5,7 @@
 from utils import load_graph_from_edge_list, breath_first_search
 
 if __name__ == '__main__':
-    inpath = "./datasets/009.bfs.txt"
+    inpath = "./datasets/009.bfs.in"
     outpath = "./datasets/009.bfs.out"
     nodes, graph = load_graph_from_edge_list(inpath)
     order, distance = breath_first_search(nodes, graph, 1)

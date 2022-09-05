@@ -21,6 +21,6 @@ def fib_recursive(n: int):
 
 
 if __name__ == "__main__":
-    path = "./datasets/001.fibo.txt"
+    path = "datasets/001.fibo.in"
     n = load_n(path)
     print(fib_recursive(n))

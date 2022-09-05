@@ -13,6 +13,6 @@ def load_data(filepath: str) -> (str, list):
 
 
 if __name__ == '__main__':
-    path = "./datasets/028.prob.txt"
+    path = "datasets/028.prob.in"
     s, gc_cs = load_data(path)
     print(' '.join([str(round(log10(motif_prob(s, gc_content)), 3)) for gc_content in gc_cs]))

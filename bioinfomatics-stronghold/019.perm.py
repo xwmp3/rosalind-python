@@ -17,7 +17,7 @@ def get_permutation_list(n: int):
 
 
 if __name__ == '__main__':
-    path = "./datasets/019.perm.txt"
+    path = "datasets/019.perm.in"
     n = load_n(path)
     print(n)
     permutate_list = get_permutation_list(n)

@@ -18,7 +18,7 @@ def enumerate_kmers(symbols: list, n: int) -> list:
 
 
 if __name__ == '__main__':
-    path = "./datasets/023.lexf.txt"
+    path = "datasets/023.lexf.in"
     symbols, n = load_data(path)
     print(symbols, n)
     for d in enumerate_kmers(symbols, n):

@@ -45,7 +45,7 @@ def three_sum(x: list) -> list:
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/014.3sum.txt"
+    inpath = "./datasets/014.3sum.in"
     outpath = "./datasets/014.3sum.out"
 
     _, _, arrs = load_arrs(inpath)

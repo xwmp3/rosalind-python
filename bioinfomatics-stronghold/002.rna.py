@@ -10,6 +10,6 @@ def load_data(filepath: str) -> str:
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/002.rna.txt"
+    inpath = "./datasets/002.rna.in"
     seq = load_data(inpath)
     print(dna_2_rna(seq))

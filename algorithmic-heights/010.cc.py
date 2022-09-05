@@ -34,7 +34,7 @@ def connected_components(nodes, graph):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/010.cc.txt"
+    inpath = "./datasets/010.cc.in"
     nodes, graph = load_graph_from_edge_list(inpath, undirected=True)
     cc = connected_components(nodes, graph)
     print(f"There're {cc} connected components in graph.")

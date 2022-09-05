@@ -26,7 +26,7 @@ def expected_number(seq_length: int, motif: str, gc_content: float):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/047.eval.txt"
+    inpath = "./datasets/047.eval.in"
 
     n, s, gc_contents = load_data(inpath)
     print(n, s, gc_contents)

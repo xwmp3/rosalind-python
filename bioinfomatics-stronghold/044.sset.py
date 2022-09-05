@@ -19,6 +19,6 @@ def subset_counts(n: int, module: int = 10 ** 6):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/044.sset.txt"
+    inpath = "./datasets/044.sset.in"
     n = load_data(inpath)
     print(subset_counts(n))

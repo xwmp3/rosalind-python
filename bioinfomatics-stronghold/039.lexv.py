@@ -22,7 +22,7 @@ def lexv(symbols: list, n: int):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/039.lexv.txt"
+    inpath = "./datasets/039.lexv.in"
     outpath = "./datasets/039.lexv.out"
     s, n = load_data(inpath)
     print(s, n)

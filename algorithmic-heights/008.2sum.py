@@ -60,7 +60,7 @@ def two_sum_with_perm(x: list):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/008.2sum.txt"
+    inpath = "./datasets/008.2sum.in"
     outpath = "./datasets/008.2sum.out"
 
     _, _, arrs = load_arrs(inpath)

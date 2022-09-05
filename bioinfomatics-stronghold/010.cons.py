@@ -23,7 +23,7 @@ def profile_and_consensus(names: list, seqs: list, nmap: str = 'ACGT'):
 
 
 if __name__ == '__main__':
-    inpath = './datasets/010.cons.txt'
+    inpath = './datasets/010.cons.in'
     outpath = './datasets/010.cons.out'
     nmap = 'ACGT'
     names, seqs = load_fasta(inpath)

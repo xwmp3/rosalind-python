@@ -94,7 +94,7 @@ class MaxHeap:
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/011.hea.txt"
+    inpath = "./datasets/011.hea.in"
     outpath = "./datasets/011.hea.out"
     n, x = load_n_list(inpath)
 

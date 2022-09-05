@@ -20,7 +20,7 @@ def insertion_sort_with_swap_counter(arr: list) -> (list, int):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/004.ins.txt"
+    inpath = "./datasets/004.ins.in"
     n, x = load_n_list(inpath)
     print(n, x)
     x_new, count = insertion_sort_with_swap_counter(x)

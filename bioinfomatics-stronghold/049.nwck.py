@@ -30,7 +30,7 @@ def distance_in_tree(tree_str: str, start_node, end_node):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/049.nwck.txt"
+    inpath = "./datasets/049.nwck.in"
     data = load_data(inpath)
     distances = [distance_in_tree(tree, data[tree][0], data[tree][1])for tree in data.keys()]
     print(list_2_str(distances))

@@ -5,7 +5,7 @@
 from utils import load_edge_list, degree_array
 
 if __name__ == "__main__":
-    inpath = "./datasets/003.deg.txt"
+    inpath = "./datasets/003.deg.in"
     outpath = "./datasets/003.deg.out"
     nodes, edges = load_edge_list(inpath)
     results = degree_array(nodes, edges)

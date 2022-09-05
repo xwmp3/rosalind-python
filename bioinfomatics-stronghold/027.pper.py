@@ -17,7 +17,7 @@ def partial_permutation_with_modulo(n: int, k: int, modulo: int = 1000000):
 
 
 if __name__ == '__main__':
-    path = "./datasets/027.pper.txt"
+    path = "datasets/027.pper.in"
     n, k = load_data(path)
     print(n, k)
     print(partial_permutation_with_modulo(n, k))

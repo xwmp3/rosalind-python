@@ -20,7 +20,7 @@ def perfect_match_num(seq: str) -> int:
 
 
 if __name__ == '__main__':
-    path = "./datasets/026.pmch.txt"
+    path = "datasets/026.pmch.in"
     rna_seq = load_data(path)
     print(rna_seq)
     print(perfect_match_num(rna_seq))

@@ -43,7 +43,7 @@ def find_protein_motif_n_gly(s: str):
 
 
 if __name__ == '__main__':
-    path = './datasets/016.mprt.txt'
+    path = 'datasets/016.mprt.in'
     uniprot_ids = load_uniprot_ids(path)
     for pid in uniprot_ids:
         fasta_path = save_prot_seq_from_uniprot(uniprot_id=pid.split('_')[0], basedir='./datasets/016.mprt.protseqs')

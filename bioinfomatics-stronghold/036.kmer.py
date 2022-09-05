@@ -30,7 +30,7 @@ def kmers_composition(seq: str, kmers: list):
 
 
 if __name__ == '__main__':
-    path = "./datasets/036.kmer.txt"
+    path = "datasets/036.kmer.in"
     outpath = './datasets/036.kmer.out'
     seq = load_data(path)
     kmers = generate_dna_kmers()

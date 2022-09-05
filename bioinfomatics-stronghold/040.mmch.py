@@ -22,7 +22,7 @@ def maximum_matching_num(seq: str) -> int:
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/040.mmch.txt"
+    inpath = "./datasets/040.mmch.in"
     outpath = "./datasets/040.mmch.out"
     seq = load_data(inpath)
     print(f"fasta seq: {seq}")

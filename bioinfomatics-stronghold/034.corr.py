@@ -50,7 +50,7 @@ def save_corrections(filepath: str, corrections: List[Tuple]):
 
 
 if __name__ == '__main__':
-    path = "./datasets/034.corr.txt"
+    path = "datasets/034.corr.in"
     outpath = "./datasets/034.corr.out"
     seqs = load_data(path)
     expand_seqs = seqs_expansion(seqs)

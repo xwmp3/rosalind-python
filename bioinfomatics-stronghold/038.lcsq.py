@@ -42,7 +42,7 @@ def longest_common_subseq(s1: str, s2: str):
 
 
 if __name__ == '__main__':
-    inpath = "./datasets/038.lcsq.txt"
+    inpath = "./datasets/038.lcsq.in"
     outpath = "./datasets/038.lcsq.out"
     seq1, seq2 = load_data(inpath)
     lcs = longest_common_subseq(seq1, seq2)

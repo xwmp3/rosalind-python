@@ -35,7 +35,7 @@ def fibd_non_recursive(n: int, m: int):
 
 
 if __name__ == '__main__':
-    path = './datasets/011.fibd.txt'
+    path = 'datasets/011.fibd.in'
     n, m = load_data(path)
     print(f"n: {n}, m: {m}")
     # print(f"recursive: \t{fibd_recursive(n, m)}")

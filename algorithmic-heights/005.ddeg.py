@@ -21,7 +21,7 @@ def double_degree_array(nodes: list, degree_array: list, neighbor_list: list):
 
 
 if __name__ == "__main__":
-    inpath = "./datasets/005.ddeg.txt"
+    inpath = "./datasets/005.ddeg.in"
     outpath = "./datasets/005.ddeg.out"
     nodes, edges = load_edge_list(inpath)
     d_a = degree_array(nodes, edges)
