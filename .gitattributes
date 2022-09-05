@@ -1,2 +1,8 @@
 * text=auto
 *.py text eof=lf
+*.in text eof=lf
+*.out text eof=lf
+
+*.py linguist-language=Python
+*.in linguist-language=Python
+*.out linguist-language=Python
