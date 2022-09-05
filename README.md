@@ -75,6 +75,8 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | No. | Title | URL | Script |
 | :----- | :----- | :---- | :---- |
 | 001 | Compute the Probability of a Hidden Path | [ba10a](https://rosalind.info/problems/ba10a/) | [001.ba10a.py](./bioinfomatics-textbook-track/001.ba10a.py) |
+| 002 | Compute the Probability of an Outcome Given a Hidden Path | [ba10b](https://rosalind.info/problems/ba10b/) | [002.ba10b.py](./bioinfomatics-textbook-track/002.ba10b.py) |
+| 003 | Implement the Viterbi Algorithm | [ba10c](https://rosalind.info/problems/ba10c/) | [003.ba10c.py](./bioinfomatics-textbook-track/003.ba10c.py) |
 
 ## Algorithmic Heights
 
