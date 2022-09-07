@@ -5,6 +5,8 @@
 # 维特比算法（动态规划）
 # 用于计算HMM中Pr(x,pi)最大时的隐藏状态序列（维特比路径）
 
+from utils import list_2_str
+
 
 # HMM(Σ, States, Transition, Emission)
 def load_data(filepath: str):
@@ -57,8 +59,7 @@ def viterbi(outcome, states, transmition, emission):
             }
 
     #print dp
-    for line in show_dptable(dp):
-        print(line)
+    for line in show_dptable(dp): print(line)
 
     opt = []
     max_prob = 0.0
@@ -76,8 +77,9 @@ def viterbi(outcome, states, transmition, emission):
         opt.insert(0, dp[t + 1][previous]["prev"])
         previous = dp[t + 1][previous]["prev"]
 
-    print("The steps of states are " + " ".join(opt) + " with highest probability of %s" % max_prob)
-    return ''.join(opt)
+    print("The steps of states are " + list_2_str(opt, sep='')
+          + " with highest probability of %s" % max_prob)
+    return list_2_str(opt, sep='')
 
 
 def show_dptable(dp_table):

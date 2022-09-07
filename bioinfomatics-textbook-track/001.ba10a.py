@@ -1,33 +1,27 @@
 # https://rosalind.info/problems/ba10a/
+# Compute the Probability of a Hidden Path
 
+from utils import hidden_path_pr
+
+
+# HMM(Σ, States, Transition, Emission)
 def load_data(filepath: str):
-    f = open(filepath, 'r')
-    path_string = f.readline().strip()
-    prs_dict = {}
-    f.readline()
-    states = f.readline().strip().split()
-    f.readline()
-    f.readline()
-    temp_prs = []
-    for _ in range(2):
-        temp_prs += [float(pr) for pr in f.readline().strip().split()[1:]]
-    for i, name in enumerate(['AA', 'AB', 'BA', 'BB']):
-        prs_dict[name] = temp_prs[i]
-    f.close()
-    return path_string, prs_dict
-
-
-def path_pr(path: str, prs: dict):
-    pr = 0.5
-    for i in range(0, len(path_str) - 1):
-        key = path[i:i + 2]
-        pr *= prs[key]
-    return pr
+    with open(filepath, 'r', encoding='utf-8') as f:
+        path = f.readline().strip()  # hidden path
+        f.readline()
+        states = f.readline().strip().split()  # states
+        f.readline()
+        f.readline()
+        transition = {}
+        for state in states:
+            temp = f.readline().strip().split()
+            transition[state] = {states[i]: float(temp[i + 1]) for i in range(len(states))}
+    return path, states, transition
 
 
 if __name__ == '__main__':
     inpath = './datasets/001.ba10a.in'
-    extra_inpath = "./datasets/001.ba10a.extra.in"
-    path_str, pr_dict = load_data(extra_inpath)
-    print(path_str, pr_dict)
-    print(path_pr(path_str, pr_dict))
+    hpath, sts, trans = load_data(inpath)
+    start_p = {'A': 0.5, 'B': 0.5}
+    print(hpath, sts, trans)
+    print(hidden_path_pr(start_p, hpath, trans))
