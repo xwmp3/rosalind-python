@@ -31,13 +31,17 @@ def load_data(filepath: str):
 
 
 def outcome_pr(outcome: str, states: list, transition: dict, emission: dict):
+    # 用于存储概率信息的矩阵
     pr_dp = [[0 for _ in range(len(outcome))] for _ in range(len(states))]
+    # 初始化概率矩阵
     for i in range(len(states)):
         pr_dp[i][0] = (1.0 / len(states)) * emission[states[i]][outcome[0]]
+    # 逐个计算概率
     for i in range(1, len(outcome)):
         for j in range(len(states)):
             for k in range(len(states)):
                 pr_dp[j][i] += pr_dp[k][i - 1] * transition[states[k]][states[j]] * emission[states[j]][outcome[i]]
+    # 求和
     sum_pr = 0
     for i in range(len(states)):
         sum_pr += pr_dp[i][-1]
