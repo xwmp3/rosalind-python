@@ -1,6 +1,6 @@
 # https://rosalind.info/problems/prot/
 
-from data import load_rna_codon_table
+from utils import rna_2_protein, list_2_str
 
 
 def load_data(filepath: str):
@@ -20,7 +20,11 @@ def rna2prot(rna_prot_map: dict, seq: str):
 
 
 if __name__ == "__main__":
-    data_path = "datasets/008.prot.in"
-    rna_prot_map = load_rna_codon_table()
-    rna_seq = load_data(data_path)
-    print(rna2prot(rna_prot_map, rna_seq))
+    in_path = "datasets/008.prot.in"
+    out_path = "./datasets/008.prot.out"
+    rna_seq = load_data(in_path)
+    outstr = list_2_str(rna_2_protein(rna_seq), sep='')
+    print(outstr)
+    with open(out_path, 'w', encoding='utf-8') as f:
+        f.write(outstr + '\n')
+    print(f"Save Result to {out_path}.")

@@ -61,6 +61,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 049 | Distances in Trees | [nwck](https://rosalind.info/problems/nwck/) | [049.nwck.py](./bioinfomatics-stronghold/049.nwck.py) |
 | 050 | Interleaving Two Motifs | [scsp](https://rosalind.info/problems/scsp/) | [050.scsp.py](./bioinfomatics-stronghold/050.scsp.py) |
 | 051 | Introduction to Set Operations | [seto](https://rosalind.info/problems/seto/) | [051.seto.py](./bioinfomatics-stronghold/051.seto.py) |
+| 053 | Inferring Protein from Spectrum | [spec](https://rosalind.info/problems/spec/) | [053.spec.py](./bioinfomatics-stronghold/053.spec.py) |
 
 ## Bioinfomatics Armory
 

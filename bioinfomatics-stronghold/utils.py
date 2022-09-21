@@ -1,3 +1,6 @@
+from data import load_rna_codon_table
+
+
 def timer(func):
     def func_wrapper(*args, **kwargs):
         from time import time
@@ -28,6 +31,17 @@ def count_nucleotides(seq: str, nmap: str = "ACGT") -> list:
 
 def dna_2_rna(seq: str) -> str:
     return ''.join([n if n != 'T' else 'U' for n in seq])
+
+
+def rna_2_protein(seq: str) -> list:
+    rna_prot_map = load_rna_codon_table()
+    prot_list = []
+    for i in range(int(len(seq) / 3)):
+        prot = rna_prot_map[seq[3 * i: 3 * i + 3]]
+        if prot == 'Stop':
+            break
+        prot_list.append(prot)
+    return prot_list
 
 
 def dna_reverse_implement(seq: str) -> str:
