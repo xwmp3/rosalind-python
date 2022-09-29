@@ -1,6 +1,7 @@
 # https://rosalind.info/problems/perm/
+# Enumerating Gene Orders
 
-import itertools
+# 019.perm.py
 
 from utils import list_2_str
 
@@ -46,8 +47,12 @@ def get_permutation_list(n: int):
 
 if __name__ == '__main__':
     inpath = "datasets/019.perm.in"
+    outpath = "./datasets/019.perm.out"
 
     permutate_list = get_permutation_list(load_n(inpath))
-    print(len(permutate_list))
-    for perm in permutate_list:
-        print(list_2_str(perm))
+
+    with open(outpath, 'w', encoding='utf-8') as out:
+        for perm in permutate_list:
+            out.write(list_2_str(list(perm)) + '\n')
+
+    print(f"Save Results to {outpath}")
