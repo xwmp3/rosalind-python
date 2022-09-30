@@ -7,7 +7,6 @@ Finding an expected number of events to finding the expected number of times
     that a given string occurs as a substring of a random string.
 """
 
-from scipy.stats import binom
 from utils import motif_prob
 
 

@@ -58,8 +58,9 @@ def viterbi(outcome, states, transmition, emission):
                 "prev": preb_st_selected
             }
 
-    #print dp
-    for line in show_dptable(dp): print(line)
+    # print dp
+    for line in show_dptable(dp):
+        print(line)
 
     opt = []
     max_prob = 0.0

@@ -1,11 +1,15 @@
 # https://rosalind.info/problems/revc/
 
 from utils import dna_reverse_implement
-    
+
+
+def load_data(filepath: str):
+    with open(filepath, 'w', encoding='utf-8') as f:
+        seq = f.readline().strip()
+    return seq
+
+
 if __name__ == "__main__":
-    datapath = './datasets/003.revc.in'
-    data = ""
-    with open(datapath, 'r') as f:
-        data = f.readline().replace('\n', '')
-    print(len(data))
-    print(dna_reverse_implement(data))
+    inpath = './datasets/003.revc.in'
+    dna_seq = load_data(inpath)
+    print(dna_reverse_implement(dna_seq))

@@ -1,7 +1,6 @@
 # https://rosalind.info/problems/sign/
 
 from itertools import permutations, product
-import numpy as np
 
 
 def load_data(filepath: str) -> int:

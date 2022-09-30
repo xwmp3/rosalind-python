@@ -9,7 +9,7 @@ from data import load_fasta
 from utils import hamming_distance, dna_reverse_implement
 
 
-def load_data(filepath: str) -> list:
+def load_data(filepath: str):
     return load_fasta(filepath)[1]
 
 

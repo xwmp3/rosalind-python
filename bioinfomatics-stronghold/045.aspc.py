@@ -5,7 +5,7 @@
 from math import comb
 
 
-def load_data(filepath: str) -> int:
+def load_data(filepath: str) -> tuple:
     with open(filepath, 'r') as f:
         n, m = [int(item) for item in f.readline().replace('\n', '').strip().split()]
     return n, m

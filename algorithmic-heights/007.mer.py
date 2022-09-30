@@ -97,7 +97,6 @@ if __name__ == '__main__':
     inpath = "./datasets/007.mer.in"
     outpath = "./datasets/007.mer.out"
     x1, x2 = load_data(inpath)
-    result = LinkedList()
     result = merge_lists(x1, x2)
     with open(outpath, 'w') as f:
         f.write(' '.join([str(item) for item in result]) + 'n')

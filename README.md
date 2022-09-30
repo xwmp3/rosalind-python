@@ -1,5 +1,3 @@
-<img src="./rosalind-logo.jpg" alt="drawing" width="450"/>
-
 # rosalind-python
 
 Solution in Python for problems in [ROSALIND](https://rosalind.info/)
