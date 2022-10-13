@@ -60,6 +60,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 050 | Interleaving Two Motifs | [scsp](https://rosalind.info/problems/scsp/) | [050.scsp.py](./bioinfomatics-stronghold/050.scsp.py) |
 | 051 | Introduction to Set Operations | [seto](https://rosalind.info/problems/seto/) | [051.seto.py](./bioinfomatics-stronghold/051.seto.py) |
 | 053 | Inferring Protein from Spectrum | [spec](https://rosalind.info/problems/spec/) | [053.spec.py](./bioinfomatics-stronghold/053.spec.py) |
+| 054 | Introduction to Pattern Matching | [trie](https://rosalind.info/problems/trie/) | [054.trie.py](./bioinfomatics-stronghold/054.trie.py) |
 
 ## Bioinfomatics Armory
 
