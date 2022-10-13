@@ -3,7 +3,6 @@
 # Script 054.trie.py created by minerw at 2022/09/20
 
 from itertools import count
-
 from utils import list_2_str
 
 
