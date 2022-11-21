@@ -6,7 +6,7 @@ from typing import List, Tuple
 from collections import Counter
 
 from data import load_fasta
-from utils import hamming_distance, dna_reverse_implement
+from utils import hamming_distance, reverse_complement
 
 
 def load_data(filepath: str):
@@ -17,7 +17,7 @@ def seqs_expansion(seqs: str):
     expand_seqs = []
     for seq in seqs:
         expand_seqs.append(seq)
-        expand_seqs.append(dna_reverse_implement(seq))
+        expand_seqs.append(reverse_complement(seq))
     return expand_seqs
 
 

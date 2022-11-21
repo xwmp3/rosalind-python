@@ -44,20 +44,31 @@ def rna_2_protein(seq: str) -> list:
     return prot_list
 
 
-def dna_reverse_implement(seq: str) -> str:
-    reverse_seq = seq[::-1]
-    res = []
-    for n in reverse_seq:
-        if n == 'A':
-            res.append('T')
-        elif n == 'T':
-            res.append('A')
-        elif n == 'C':
-            res.append('G')
-        elif n == 'G':
-            res.append('C')
+def reverse_complement(seq: str, t: str = 'DNA') -> str:
+    comp_dict = {}
+    if t == 'DNA' or 'dna':
+        comp_dict = {
+            'A': 'T',
+            'T': 'A',
+            'C': 'G',
+            'G': 'C'
+        }
+    elif t == 'RNA' or 'rna':
+        comp_dict = {
+            'A': 'U',
+            'U': 'A',
+            'C': 'G',
+            'G': 'C'
+        }
+    else:
+        print(f'Wrong type {t} for sequence to complement')
+        exit(1)
 
-    return ''.join(res)
+    seq = seq.upper()  # dict is for upper case
+    reverse_seq = seq[::-1]
+    res = [comp_dict[n] for n in reverse_seq]
+
+    return list_2_str(res, sep='')
 
 
 def motif_prob(s: str, gc_content: float):

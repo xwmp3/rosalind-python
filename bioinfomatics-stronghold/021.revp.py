@@ -1,12 +1,12 @@
 # https://rosalind.info/problems/revp/
 
 from data import load_fasta
-from utils import dna_reverse_implement
+from utils import reverse_complement
 
 
 def palindromic_recognition_site(seq1: str):
     res: list = []
-    seq2 = dna_reverse_implement(seq1)[::-1]
+    seq2 = reverse_complement(seq1)[::-1]
     for i in range(2, len(seq2) - 1):
         for j in range(2, 7):
             if i - j < 0 or i + j > len(seq2): break

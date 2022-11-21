@@ -1,7 +1,7 @@
 # https://rosalind.info/problems/orf/
 
 from data import load_fasta, load_rna_codon_table
-from utils import dna_reverse_implement, dna_2_rna
+from utils import reverse_complement, dna_2_rna
 
 
 def rna_2_prot(seq: str, codon_map: dict, start_codon: str = 'AUG') -> list:
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     path = 'datasets/018.orf.in'
     data = load_fasta(path)[1][0]
     rna_codon_map = load_rna_codon_table()
-    seqs = [data, dna_reverse_implement(data)]
+    seqs = [data, reverse_complement(data)]
     prots = set()
     for seq in seqs:
         rna_seq = dna_2_rna(seq)

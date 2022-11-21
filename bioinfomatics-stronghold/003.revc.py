@@ -1,6 +1,6 @@
 # https://rosalind.info/problems/revc/
 
-from utils import dna_reverse_implement
+from utils import reverse_complement
 
 
 def load_data(filepath: str):
@@ -12,4 +12,4 @@ def load_data(filepath: str):
 if __name__ == "__main__":
     inpath = './datasets/003.revc.in'
     dna_seq = load_data(inpath)
-    print(dna_reverse_implement(dna_seq))
+    print(reverse_complement(dna_seq))

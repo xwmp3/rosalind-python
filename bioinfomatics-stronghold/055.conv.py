@@ -33,4 +33,3 @@ if __name__ == "__main__":
     n, x = spectra_comparation(s1, s2)
     print(n)
     print(x)
-
