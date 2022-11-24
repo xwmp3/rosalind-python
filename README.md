@@ -62,6 +62,7 @@ Solution in Python for problems in [ROSALIND](https://rosalind.info/)
 | 053 | Inferring Protein from Spectrum | [spec](https://rosalind.info/problems/spec/) | [053.spec.py](./bioinfomatics-stronghold/053.spec.py) |
 | 054 | Introduction to Pattern Matching | [trie](https://rosalind.info/problems/trie/) | [054.trie.py](./bioinfomatics-stronghold/054.trie.py) |
 | 055 | Comparing Spectra with the Spectral Convolution | [conv](https://rosalind.info/problems/conv/) | [055.conv.py](./bioinfomatics-stronghold/055.conv.py) |
+| 057 | Constructing a De Bruijn Graph | [dbru](https://rosalind.info/problems/dbru/) | [057.dbru.py](./bioinfomatics-stronghold/057.dbru.py) |
 
 ## Bioinfomatics Armory
 
